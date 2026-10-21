@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function goToSlide(direction) {
         // O slide de aula prática encerra a apresentação.
-        if (page === 'Slide29.html' && direction === 1) { window.location.href='../index.html'; return; }
+        if (page === 'Slide28.html' && direction === 1) { window.location.href='Slide30.html'; return; }
+        if (page === 'Slide30.html') { window.location.href=direction===1?'Slide29.html':'Slide28.html'; return; }
+        if (page === 'Slide29.html') { window.location.href=direction===1?'../index.html':'Slide30.html'; return; }
         
         // --- REGRAS ESPECIAIS PARA O SLIDE 8.5 ---
         
