@@ -9,7 +9,7 @@ Entregáveis finais para o repositório **Kalicon/Curso-Helpponto**.
 - Ranking: https://kalicon.github.io/Curso-Helpponto/ranking.html
 - Repositório: https://github.com/Kalicon/Curso-Helpponto
 
-Os endereços do site só funcionarão depois da ativação do GitHub Pages e da publicação. Os atalhos `.url` desta pasta já apontam para os endereços finais.
+O GitHub Pages está configurado; os endereços ficam disponíveis após a execução do workflow de publicação. Os atalhos `.url` desta pasta já apontam para os endereços finais.
 
 ## Organização
 
@@ -22,7 +22,7 @@ A versão pública não contém validação de perguntas, aula prática, modo Ex
 
 ## Antes de ativar
 
-1. Concluir a ativação do serviço gratuito na conta Cloudflare, conforme o README do serviço.
+1. Serviço Cloudflare criado na conta autorizada. API: https://help-ponto-ranking.help-ponto-ranking.workers.dev . Banco e segredo já configurados.
 2. Preencher `apiUrl` em `site/assets/site-config.js` com a URL HTTPS da API. Esse endereço é público e não é uma senha.
 3. Na configuração do repositório, em Settings → Pages, escolher GitHub Actions como origem.
 4. Executar o workflow **Publicar site** manualmente e conferir o endereço exibido pelo GitHub.

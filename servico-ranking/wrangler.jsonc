@@ -4,5 +4,5 @@
   "main": "worker.mjs",
   "compatibility_date": "2026-10-21",
   "vars": {"ALLOWED_ORIGINS": "https://kalicon.github.io"},
-  "d1_databases": [{"binding": "DB", "database_name": "help-ponto-ranking", "database_id": "SUBSTITUIR_PELO_ID_DO_D1", "migrations_dir": "migrations"}]
+  "d1_databases": [{"binding": "DB", "database_name": "help-ponto-ranking", "database_id": "0f942b1a-ae78-46d1-92b8-4b87ab96d147", "migrations_dir": "migrations"}]
 }
