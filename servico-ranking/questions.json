@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "doe350",
+    "reviewId": "P001",
+    "tier": 1,
+    "category": "Saúde",
+    "question": "Uma licença-saúde estatutária ainda não saiu no DOE no mês. Qual código a chefia deve lançar enquanto aguarda a publicação?",
+    "options": [
+      "350",
+      "022",
+      "374",
+      "001"
+    ],
+    "correct": 0,
+    "hint": "Essa situação foi corrigida pelo responsável pelo curso: não é falta injustificada.",
+    "explanation": "Enquanto a licença-saúde não sair no DOE no mês, a chefia lança 350. Os lançamentos vinculados à publicação e as datas do DOE ficam a cargo do RH; a chefia acompanha e confere a regularização."
+  },
+  {
+    "id": "vinculo",
+    "reviewId": "P002",
+    "tier": 0,
+    "category": "Primeiros passos",
+    "question": "Antes de escolher um código de ocorrência, qual é a primeira conferência?",
+    "options": [
+      "Escolher o código com menos campos.",
+      "Usar sempre o lançamento do mês anterior.",
+      "Identificar o vínculo e a jornada do servidor.",
+      "Repetir o código do colega."
+    ],
+    "correct": 2,
+    "hint": "As regras podem depender do regime e da jornada.",
+    "explanation": "O vínculo e a jornada ajudam a identificar quais regras se aplicam ao caso. Situações parecidas podem exigir tratamentos diferentes. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "compensacao",
+    "reviewId": "P003",
+    "tier": 1,
+    "category": "Pontualidade",
+    "question": "Uma pessoa chegou atrasada e prometeu compensar. O que conferir antes de concluir o lançamento?",
+    "options": [
+      "Os horários e a compensação efetiva, conforme os critérios aplicáveis.",
+      "Apenas a promessa de compensação.",
+      "Somente se houve atraso no mês anterior.",
+      "Nada: a promessa encerra a análise."
+    ],
+    "correct": 0,
+    "hint": "Prometer uma ação não comprova que ela aconteceu.",
+    "explanation": "Confira as marcações, a compensação efetiva e a autorização aplicável. A promessa, sozinha, não comprova a compensação."
+  },
+  {
+    "id": "consulta",
+    "reviewId": "P004",
+    "tier": 1,
+    "category": "Saúde",
+    "question": "Um servidor estatutário com jornada de 40 horas semanais apresentou comprovante de consulta que ocupou parte do expediente. Qual é a melhor conduta?",
+    "options": [
+      "Descartar o documento porque não abrange o dia inteiro.",
+      "Lançar o mesmo código de qualquer licença de saúde.",
+      "Conferir o período, a jornada e o vínculo antes de definir a ocorrência.",
+      "Registrar automaticamente um dia inteiro de afastamento."
+    ],
+    "correct": 2,
+    "hint": "Para 40 horas semanais, confira o enquadramento no 278 e os requisitos da ausência parcial.",
+    "explanation": "Confira período comprovado, jornada, vínculo e requisitos. Para servidor de 40 horas semanais, o código 278 pode ser utilizado quando atendidas as regras aplicáveis; o comprovante de parte do dia não autoriza automaticamente afastamento do dia inteiro."
+  },
+  {
+    "id": "parentesco",
+    "reviewId": "P005",
+    "tier": 0,
+    "category": "Licenças familiares",
+    "question": "Em uma consulta sobre licença por falecimento, qual conjunto de informações deve ser reunido?",
+    "options": [
+      "Vínculo, parentesco, data do evento e documentação.",
+      "Apenas o nome do familiar.",
+      "Somente a data de entrega do documento.",
+      "O código usado pelo último colega que pediu a licença."
+    ],
+    "correct": 0,
+    "hint": "O parentesco é parte essencial dessa análise.",
+    "explanation": "Reúna vínculo, parentesco, data do evento e documentação. Esses dados apoiam a consulta da regra e da forma de contagem aplicáveis."
+  },
+  {
+    "id": "casamento",
+    "reviewId": "P006",
+    "tier": 1,
+    "category": "Licenças familiares",
+    "question": "Dois servidores de vínculos diferentes comunicaram casamento na mesma data. Como analisar?",
+    "options": [
+      "Usar o período de quem entregou o documento primeiro.",
+      "Dispensar a conferência dos vínculos.",
+      "Consultar a regra de cada vínculo individualmente.",
+      "Atribuir o mesmo período porque a data é igual."
+    ],
+    "correct": 2,
+    "hint": "Uma data igual não torna os vínculos iguais.",
+    "explanation": "O vínculo faz parte da análise da licença. Consulte cada caso individualmente antes de atribuir o período de afastamento."
+  },
+  {
+    "id": "pendencias",
+    "reviewId": "P007",
+    "tier": 1,
+    "category": "Conferência",
+    "question": "Você encontrou ausências consecutivas e documentos ainda em análise. Qual é o próximo passo?",
+    "options": [
+      "Organizar as datas e pendências e encaminhar o histórico ao RH.",
+      "Concluir automaticamente que houve abandono.",
+      "Excluir as marcações anteriores.",
+      "Aplicar uma penalidade sem analisar os documentos."
+    ],
+    "correct": 0,
+    "hint": "A área competente precisa do histórico completo.",
+    "explanation": "Organize os registros e as pendências para análise pelo RH. Uma sequência de ausências não autoriza, por si só, concluir uma penalidade."
+  },
+  {
+    "id": "sobreposicao",
+    "reviewId": "P008",
+    "tier": 1,
+    "category": "Conferência",
+    "question": "Uma licença-saúde própria ou para cuidar de familiar coincide com férias em utilização. Qual tratamento da frequência corresponde à orientação da unidade?",
+    "options": [
+      "Mover a licença para depois das férias, alterando as datas reais.",
+      "Cancelar definitivamente o saldo restante de férias.",
+      "Suspender o uso das férias durante a licença e retomar o saldo após seu término, acompanhando a regularização com o RH.",
+      "Manter férias e licença simultaneamente nos mesmos dias."
+    ],
+    "correct": 2,
+    "hint": "A licença suspende o uso das férias; o saldo não é perdido.",
+    "explanation": "Conforme a orientação da unidade, licença-saúde própria ou de pessoa da família suspende o período de uso das férias. As férias retornam após o término da licença. A chefia acompanha e confere a regularização com o RH."
+  },
+  {
+    "id": "eleitoral",
+    "reviewId": "P009",
+    "tier": 1,
+    "category": "Benefícios",
+    "question": "O servidor apresentou uma declaração de serviço eleitoral e pediu folgas. Qual procedimento deve ocorrer antes de usufruí-las?",
+    "options": [
+      "Conferir a declaração e encaminhá-la, pelo servidor ou pelo setor, para cadastro no Sistema de Gestão de Pessoas; após o cadastro, organizar as folgas com a chefia.",
+      "Usufruir as folgas antes do cadastro, apenas com aviso verbal.",
+      "Dispensar a declaração porque houve eleição.",
+      "Registrar as folgas em qualquer data sem conferir a documentação."
+    ],
+    "correct": 0,
+    "hint": "A declaração precisa ser cadastrada antes da utilização das folgas.",
+    "explanation": "Confira a documentação e encaminhe a declaração de serviço eleitoral, pelo servidor ou pelo próprio setor, para cadastro no Sistema de Gestão de Pessoas. Após o cadastro, o servidor poderá usufruir as folgas, com as datas organizadas junto à chefia."
+  },
+  {
+    "id": "teletrabalho",
+    "reviewId": "P010",
+    "tier": 1,
+    "category": "Benefícios",
+    "question": "Uma pessoa trabalhou de casa. Isso basta para definir o lançamento de teletrabalho?",
+    "options": [
+      "Sim, se ela avisou apenas um colega.",
+      "Sim, desde que seja uma sexta-feira.",
+      "Não. É preciso conferir a autorização e os requisitos aplicáveis.",
+      "Sim. O local de trabalho define tudo."
+    ],
+    "correct": 2,
+    "hint": "A localização não substitui a autorização.",
+    "explanation": "Trabalhar remotamente, por si só, não comprova o enquadramento. Confira a autorização e os requisitos do procedimento vigente."
+  },
+  {
+    "id": "duvida",
+    "reviewId": "P011",
+    "tier": 1,
+    "category": "Decisão segura",
+    "question": "Duas orientações do material parecem divergir. Qual atitude ajuda a resolver o caso?",
+    "options": [
+      "Consultar o RH e a referência vigente antes de lançar.",
+      "Escolher a orientação mais curta.",
+      "Usar a alternativa mais vantajosa sem consultar.",
+      "Lançar por tentativa até o sistema aceitar."
+    ],
+    "correct": 0,
+    "hint": "Uma dúvida de regra precisa de uma fonte de orientação.",
+    "explanation": "Encaminhe a dúvida ao RH e confira a referência aplicável. Evite decidir apenas pela aparência do código ou por tentativa. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "revisao",
+    "reviewId": "P012",
+    "tier": 0,
+    "category": "Conferência",
+    "question": "Antes de concluir um lançamento, qual conjunto merece a última conferência?",
+    "options": [
+      "Apenas o nome da unidade.",
+      "Somente o primeiro dia do mês.",
+      "Servidor, vínculo, código, período e documentação.",
+      "Somente a cor do botão de salvar."
+    ],
+    "correct": 2,
+    "hint": "A revisão deve conectar pessoa, ocorrência e evidência.",
+    "explanation": "A conferência final deve verificar se os dados do servidor, o vínculo, o código e as datas correspondem à documentação e à orientação utilizada. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "atalho",
+    "reviewId": "P014",
+    "tier": 0,
+    "category": "Decisão segura",
+    "question": "Você achou um código com nome parecido com a situação. Isso já é suficiente?",
+    "options": [
+      "Sim, desde que o código tenha três dígitos.",
+      "Sim, se o código aparece primeiro na lista.",
+      "Não. É preciso conferir descrição, vínculo e requisitos.",
+      "Sim. Nomes parecidos garantem o mesmo efeito."
+    ],
+    "correct": 2,
+    "hint": "A semelhança do nome não substitui a análise.",
+    "explanation": "A escolha deve corresponder ao fato, ao vínculo e aos requisitos aplicáveis. Códigos parecidos não devem ser tratados como equivalentes. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "evidencia",
+    "reviewId": "P015",
+    "tier": 1,
+    "category": "Conferência",
+    "question": "Como explicar a escolha de um código ao revisar um lançamento?",
+    "options": [
+      "Relacionar o fato, o documento e a regra consultada.",
+      "Dizer apenas que sempre foi feito assim.",
+      "Mostrar somente que o sistema aceitou.",
+      "Usar a pontuação do quiz como autorização."
+    ],
+    "correct": 0,
+    "hint": "Uma boa decisão pode ser explicada com evidências.",
+    "explanation": "A justificativa conecta o fato ocorrido, a documentação e a referência utilizada. Acertar o quiz é aprendizado e não substitui a análise do lançamento. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "competencia",
+    "reviewId": "P016",
+    "tier": 0,
+    "category": "Primeiros passos",
+    "question": "Ao começar a editar uma frequência, o que conferir antes de realizar o lançamento?",
+    "options": [
+      "O servidor que aparece primeiro na lista.",
+      "Qualquer mês, desde que o nome esteja certo.",
+      "O servidor selecionado e a competência em análise.",
+      "Apenas o tamanho da janela."
+    ],
+    "correct": 2,
+    "hint": "É preciso confirmar a pessoa e o período.",
+    "explanation": "Confira o servidor e a competência antes de analisar ou registrar uma ocorrência. Essa verificação evita trabalhar em pessoa ou período diferente do pretendido. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "analise-compensacao",
+    "reviewId": "P018",
+    "tier": 2,
+    "category": "Análise de cenário",
+    "question": "A chefia autorizou uma saída. O servidor informa que compensou, mas as marcações não comprovam a reposição. Qual sequência de análise faz mais sentido?",
+    "options": [
+      "Usar o código compensado e deixar a divergência fora do acompanhamento.",
+      "Desconsiderar a autorização e concluir somente pela marcação de saída.",
+      "Conferir a autorização, as marcações e a compensação antes de definir a ocorrência.",
+      "Considerar que a autorização da saída também comprova a compensação."
+    ],
+    "correct": 2,
+    "hint": "Autorização e compensação são informações diferentes.",
+    "explanation": "Autorizar a saída e comprovar a compensação são verificações distintas. Reúna ambos os registros e confira os critérios aplicáveis antes de concluir."
+  },
+  {
+    "id": "analise-vinculos",
+    "reviewId": "P019",
+    "tier": 2,
+    "category": "Análise de cenário",
+    "question": "Dois pedidos têm a mesma descrição e o mesmo período, mas os servidores têm vínculos diferentes. Qual conclusão é adequada?",
+    "options": [
+      "A semelhança do pedido não dispensa a consulta das regras de cada vínculo.",
+      "O mesmo período garante que o código possa ser replicado entre os vínculos.",
+      "A descrição do pedido substitui a análise do vínculo quando há documento.",
+      "A regra do primeiro pedido analisado deve orientar o segundo automaticamente."
+    ],
+    "correct": 0,
+    "hint": "A ocorrência é apenas uma parte do enquadramento.",
+    "explanation": "Descrição e datas semelhantes não tornam os vínculos equivalentes. A análise deve relacionar o vínculo, o fato e os requisitos de cada situação."
+  },
+  {
+    "id": "analise-350",
+    "reviewId": "P022",
+    "tier": 2,
+    "category": "Código 350",
+    "question": "Uma licença-saúde estatutária ainda não saiu no DOE no mês. Um colega sugere falta injustificada e outro lembra da correção do curso. Qual orientação aplicar a esse caso?",
+    "options": [
+      "Código 001, porque o documento particular substitui a publicação.",
+      "Código 374, como alternativa equivalente ao 350 neste curso.",
+      "Código 350, acompanhando a publicação para a regularização do registro.",
+      "Código 022, porque a ausência de publicação define falta injustificada."
+    ],
+    "correct": 2,
+    "hint": "A correção do responsável pelo curso definiu um único código para esse cenário.",
+    "explanation": "O responsável pelo curso corrigiu essa situação para o código 350. As alternativas 022 e 374 foram retiradas dessa orientação. Acompanhe a publicação para regularizar o registro. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH. Enquanto aguarda a publicação, a chefia lança 350. Após a publicação, o RH cuida do lançamento correspondente e das datas do DOE; a chefia acompanha e confere."
+  },
+  {
+    "id": "milhao-encadeamento",
+    "reviewId": "P023",
+    "tier": 3,
+    "category": "Caso integrado",
+    "question": "Reta final: você recebeu um documento, encontrou um código parecido e percebeu um período já registrado. Qual sequência reúne as conferências necessárias?",
+    "options": [
+      "Confirmar vínculo e jornada, comparar fato e documento, analisar as datas e a sobreposição e então definir o código com a referência aplicável.",
+      "Escolher o código pelo nome, deslocar a data para o primeiro dia livre e conferir a documentação depois do fechamento.",
+      "Repetir o código do último mês, manter o período solicitado e usar a aceitação do sistema como validação.",
+      "Conferir o documento e aplicar o código semelhante, pois a existência de comprovante dispensa o restante da análise."
+    ],
+    "correct": 0,
+    "hint": "A decisão precisa conectar pessoa, fato, evidência, período e referência.",
+    "explanation": "Uma decisão fundamentada relaciona vínculo e jornada, fato ocorrido, documentação, datas e regras aplicáveis. Sobreposições e dúvidas devem ser esclarecidas antes de concluir o lançamento. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "milhao-doe",
+    "reviewId": "P024",
+    "tier": 3,
+    "category": "Caso integrado",
+    "question": "No fechamento, uma licença-saúde estatutária ainda não foi publicada no DOE. A equipe discute entre 001, 022 e 350. Qual conduta corresponde à situação?",
+    "options": [
+      "Aplicar 022 para qualquer licença ainda sem publicação e encerrar o acompanhamento do documento.",
+      "Alternar entre 350 e 022 conforme a disponibilidade de saldo de cada servidor.",
+      "Aplicar 350 para a licença sem publicação no mês e acompanhar a publicação para regularização, sem tratar automaticamente o caso como falta injustificada.",
+      "Aplicar 001 imediatamente porque o atestado, sozinho, encerra a análise da licença estatutária."
+    ],
+    "correct": 2,
+    "hint": "Diferencie a licença que aguarda publicação de uma falta injustificada.",
+    "explanation": "Enquanto a licença-saúde não sair no DOE no mês, a chefia lança 350. A ausência de publicação não transforma automaticamente a licença em falta injustificada. O RH cuida dos lançamentos vinculados à publicação; a chefia acompanha e confere o registro."
+  },
+  {
+    "id": "milhao-dossie",
+    "reviewId": "P025",
+    "tier": 3,
+    "category": "Caso integrado",
+    "question": "Uma equipe recebeu três pedidos: consulta de parte do dia, casamento de servidores com vínculos distintos e ausência consecutiva com documentos pendentes. Qual método atende aos três casos?",
+    "options": [
+      "Analisar período e jornada na consulta, regra por vínculo no casamento e histórico e pendências com o RH nas ausências.",
+      "Tratar toda consulta como dia inteiro, igualar os períodos de casamento e concluir penalidade pela sequência de ausências.",
+      "Aplicar o mesmo código sempre que houver comprovante, independentemente do vínculo ou da duração do fato.",
+      "Padronizar os períodos entre os três casos e conferir as diferenças somente se houver rejeição pelo sistema."
+    ],
+    "correct": 0,
+    "hint": "Cada cenário pede uma conferência própria; um comprovante não torna os três casos equivalentes.",
+    "explanation": "A consulta deve ser comparada à jornada e ao período comprovado; o casamento exige análise por vínculo; as ausências com pendências devem ter o histórico organizado e encaminhado para orientação do RH. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "milhao-fundamento",
+    "reviewId": "P026",
+    "tier": 3,
+    "category": "Caso integrado",
+    "question": "Você vai apresentar um lançamento para revisão. Qual justificativa permite compreender a escolha e verificar sua adequação?",
+    "options": [
+      "Apresentar apenas a pontuação obtida no jogo e a semelhança entre o nome do código e a solicitação.",
+      "Mostrar somente o documento entregue, deixando implícitos o vínculo, o período e a regra de enquadramento.",
+      "Identificar vínculo e jornada, descrever o fato e o período, relacionar a documentação e indicar a referência usada e as pendências esclarecidas.",
+      "Informar que o sistema aceitou o código e que outro servidor recebeu o mesmo lançamento no mês passado."
+    ],
+    "correct": 2,
+    "hint": "A revisão precisa reconstruir o caminho da decisão.",
+    "explanation": "Uma justificativa verificável conecta vínculo, jornada, fato, período, documentação e referência aplicável. O sistema aceitar o registro e o resultado do jogo não substituem essa análise. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "caso-ferias",
+    "reviewId": "P028",
+    "tier": 0,
+    "category": "Férias",
+    "question": "O RH lançou as férias regulamentares de um servidor. Qual código a chefia deve reconhecer ao conferir o período autorizado?",
+    "options": [
+      "130",
+      "037",
+      "047",
+      "009"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "Férias regulamentares correspondem ao código 047, lançado pelo RH. É boa prática a chefia acompanhar e conferir código e período, encaminhando eventuais divergências ao RH."
+  },
+  {
+    "id": "caso-saude-publicada",
+    "reviewId": "P029",
+    "tier": 0,
+    "category": "Saúde estatutária",
+    "question": "Uma servidora estatutária realizou a perícia e a licença para sua própria saúde foi publicada no DOE. O período da publicação coincide com o documento recebido. Qual código o slide utiliza para essa licença?",
+    "options": [
+      "001",
+      "002",
+      "350",
+      "120"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 10 apresenta 001 para licença para tratamento da própria saúde do estatutário, com os requisitos ali descritos. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "caso-clt-um-dia",
+    "reviewId": "P030",
+    "tier": 0,
+    "category": "Saúde CLT",
+    "question": "Um empregado CLT apresentou um atestado de um dia, sem outros afastamentos relacionados informados no caso. Qual código o quadro comparativo dos slides associa a esse cenário?",
+    "options": [
+      "315",
+      "275",
+      "120",
+      "001"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "No quadro do slide 12, o atestado CLT de um dia está associado ao código 120."
+  },
+  {
+    "id": "caso-casamento-efp",
+    "reviewId": "P031",
+    "tier": 0,
+    "category": "Casamento",
+    "question": "Um servidor estatutário entregou a certidão de casamento. A dúvida do apontador é qual código pesquisar para a licença, antes de conferir o período. Qual é a associação apresentada no material?",
+    "options": [
+      "037",
+      "201",
+      "038",
+      "047"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 15 associa a licença de casamento do estatutário ao código 037."
+  },
+  {
+    "id": "caso-eleitoral",
+    "reviewId": "P033",
+    "tier": 0,
+    "category": "Serviço eleitoral",
+    "question": "Uma servidora apresentou certidão da Justiça Eleitoral e pediu que as datas das folgas fossem combinadas com a chefia. Qual código do material corresponde a esse assunto?",
+    "options": [
+      "130",
+      "202",
+      "047",
+      "372"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O material relaciona o código 130 ao serviço eleitoral, com conferência da certidão e das datas de fruição."
+  },
+  {
+    "id": "caso-teletrabalho",
+    "reviewId": "P034",
+    "tier": 0,
+    "category": "Teletrabalho",
+    "question": "Uma servidora tem autorização e plano de trabalho para atuação remota, com todas as aprovações necessárias concluídas. Qual código corresponde ao teletrabalho?",
+    "options": [
+      "000",
+      "130",
+      "372",
+      "235"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "Teletrabalho corresponde ao 372 no cenário do curso. O registro depende do atendimento dos requisitos e da conclusão de todas as aprovações necessárias; um pedido em andamento não basta."
+  },
+  {
+    "id": "caso-atraso-compensado",
+    "reviewId": "P035",
+    "tier": 1,
+    "category": "Pontualidade",
+    "question": "Uma servidora chegou 12 minutos após o início do expediente, compensou no mesmo dia e esta é sua primeira ocorrência desse tipo no mês. Qual código é proposto pelos slides para esse cenário?",
+    "options": [
+      "153",
+      "229",
+      "235",
+      "046"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 06 relaciona 153 à entrada atrasada compensada, com limites e compensação no mesmo dia."
+  },
+  {
+    "id": "caso-retirada-compensada",
+    "reviewId": "P036",
+    "tier": 1,
+    "category": "Pontualidade",
+    "question": "Um servidor estatutário, fora do Quadro do Magistério, retirou-se por uma hora por motivo particular, com autorização da chefia. A compensação foi comprovada no segundo dia útil seguinte e não há ocorrências 235 ou 258 anteriores no mês. Qual motivo do curso deve ser analisado?",
+    "options": [
+      "278",
+      "229",
+      "235",
+      "153"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O motivo 235 é retirada compensada, exceto CLT e Quadro do Magistério. Confira o limite mensal, a duração e a compensação no dia ou nos três dias úteis subsequentes."
+  },
+  {
+    "id": "caso-atraso-sem-compensacao",
+    "reviewId": "P037",
+    "tier": 1,
+    "category": "Pontualidade",
+    "question": "Uma servidora, fora do Quadro do Magistério, iniciou o trabalho 20 minutos depois do horário e não compensou o atraso. O restante da jornada foi cumprido. Qual motivo do curso corresponde à entrada atrasada no primeiro período, sem compensação?",
+    "options": [
+      "229",
+      "153",
+      "235",
+      "000"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O 229 corresponde à entrada atrasada no primeiro período sem compensação, com desconto de 1/3; sua aplicação exclui o Quadro do Magistério."
+  },
+  {
+    "id": "caso-consulta-dia",
+    "reviewId": "P038",
+    "tier": 1,
+    "category": "Ausência médica",
+    "question": "Um servidor efetivo ou regido pela Lei 500/74 apresentou atestado referente a um dia de ausência para consulta médica. É a primeira ocorrência do mês e do ano, e os demais requisitos estão atendidos. Qual código corresponde à ausência médica de rotina?",
+    "options": [
+      "235",
+      "120",
+      "275",
+      "278"
+    ],
+    "correct": 2,
+    "hint": "Confira o vínculo e o cadastro do atestado no SOU.SP.GOV, mesmo para um único dia.",
+    "explanation": "O 275 é exclusivo para efetivos e servidores da Lei 500/74 no cenário informado. Mesmo para um único dia, o atestado deve ser cadastrado no SOU.SP.GOV. Dependendo da situação, poderá ser agendada perícia médica. Confira os requisitos e limites antes de definir o registro."
+  },
+  {
+    "id": "caso-consulta-parcial",
+    "reviewId": "P039",
+    "tier": 1,
+    "category": "Ausência médica",
+    "question": "Uma servidora estatutária de 40 horas semanais comunicou a chefia e apresentou comprovante de consulta com permanência de duas horas. A ausência foi apenas parcial. Qual código do slide extra deve ser conferido para essa situação?",
+    "options": [
+      "278",
+      "275",
+      "235",
+      "361"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 08b apresenta 278 para saídas temporárias de saúde, com requisitos específicos."
+  },
+  {
+    "id": "caso-clt-oito-dias",
+    "reviewId": "P040",
+    "tier": 1,
+    "category": "Saúde CLT",
+    "question": "Um empregado CLT apresentou atestado de oito dias consecutivos. O caso não informa afastamentos anteriores relacionados. Qual código o quadro dos slides associa ao afastamento entre dois e quinze dias?",
+    "options": [
+      "315",
+      "001",
+      "361",
+      "120"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O 361 corresponde a auxílio-doença CLT/RGPS até quinze dias. O enquadramento depende da análise do histórico de afastamentos relacionados pelo RH."
+  },
+  {
+    "id": "caso-clt-prolongado",
+    "reviewId": "P041",
+    "tier": 1,
+    "category": "Saúde CLT",
+    "question": "O RH analisa um servidor CLT/RGPS que já recebe um benefício do INSS e está em licença-saúde, sem direito à percepção de auxílio-doença a partir do 16º dia na hipótese descrita no caso. Qual motivo deve ser conferido para essa situação específica?",
+    "options": [
+      "315",
+      "361",
+      "120",
+      "350"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O 315 trata de licença-saúde sem percepção de auxílio-doença nessa hipótese específica. Ele não é um motivo genérico para qualquer afastamento CLT superior a quinze dias."
+  },
+  {
+    "id": "caso-luto-irmao",
+    "reviewId": "P042",
+    "tier": 1,
+    "category": "Licenças familiares",
+    "question": "Uma servidora estatutária apresentou a certidão de óbito do irmão. Antes de conferir a duração, qual código do quadro de parentes diretos deve ser consultado segundo o material?",
+    "options": [
+      "225",
+      "019",
+      "038",
+      "149"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 16 inclui irmãos no grupo apresentado sob o código 038."
+  },
+  {
+    "id": "caso-luto-sogra",
+    "reviewId": "P043",
+    "tier": 1,
+    "category": "Licenças familiares",
+    "question": "Um servidor estatutário comunicou o falecimento da sogra e apresentou a certidão. Qual código do material está associado a esse grupo de parentes afins?",
+    "options": [
+      "149",
+      "038",
+      "225",
+      "019"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 16 associa sogro e sogra ao código 149."
+  },
+  {
+    "id": "caso-luto-avo",
+    "reviewId": "P044",
+    "tier": 1,
+    "category": "Licenças familiares",
+    "question": "Uma servidora estatutária entregou certidão referente ao falecimento da avó. Qual código do slide se refere ao grupo de avós e netos?",
+    "options": [
+      "038",
+      "201",
+      "225",
+      "149"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O material apresenta 225 no grupo de avós e netos do estatutário."
+  },
+  {
+    "id": "caso-luto-clt",
+    "reviewId": "P045",
+    "tier": 1,
+    "category": "Licenças familiares",
+    "question": "Um empregado CLT apresentou certidão de óbito do pai. Para não copiar um código estatutário, qual código do quadro CLT deve ser consultado?",
+    "options": [
+      "019",
+      "038",
+      "149",
+      "225"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 17 apresenta 019 para o grupo de falecimento descrito para CLT."
+  },
+  {
+    "id": "caso-licenca-premio",
+    "reviewId": "P046",
+    "tier": 1,
+    "category": "Benefícios",
+    "question": "Ao acompanhar a frequência, a chefia encontra o lançamento de licença-prêmio feito pelo RH. Qual código deve reconhecer e conferir para esse afastamento?",
+    "options": [
+      "130",
+      "279",
+      "009",
+      "047"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "Licença-prêmio corresponde ao 009. O lançamento é realizado pelo RH; é boa prática a chefia acompanhar e conferir código e período, encaminhando divergências ao RH."
+  },
+  {
+    "id": "caso-jornada-parcial",
+    "reviewId": "P047",
+    "tier": 2,
+    "category": "Pontualidade",
+    "question": "Um servidor estatutário chegou uma hora e trinta minutos após o início do expediente, sem hipótese de exceção ou compensação descrita no caso. Qual motivo corresponde à entrada após uma hora ou retirada sem compensação, com desconto do dia?",
+    "options": [
+      "046",
+      "229",
+      "153",
+      "235"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O motivo 046 exclui CLT e descreve entrada após uma hora ou retirada sem compensação. Há desconto financeiro e manutenção de frequente para contagem de tempo; o enquadramento também considera da permanência superior a dois terços."
+  },
+  {
+    "id": "caso-sexto-atraso",
+    "reviewId": "P048",
+    "tier": 2,
+    "category": "Pontualidade",
+    "question": "A servidora compensou um atraso de dez minutos no mesmo dia, mas o controle indica cinco ocorrências 153 já registradas no mês. Qual análise deve ocorrer antes de repetir o código?",
+    "options": [
+      "Trocar o atraso por retirada 235 para não atingir o limite do 153.",
+      "Registrar 000 para retirar a ocorrência do controle mensal.",
+      "Conferir o limite mensal e pedir orientação para o enquadramento do excedente.",
+      "Repetir o 153 porque toda compensação elimina qualquer limite de utilização."
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O controle deve considerar a soma das ocorrências 153 e 157 e o efeito de perda de 1/3 a partir do sexto atraso. Confira o controle completo com o RH; não troque o tipo de ocorrência para contornar esse efeito."
+  },
+  {
+    "id": "caso-fechamento-350",
+    "reviewId": "P049",
+    "tier": 2,
+    "category": "Saúde estatutária",
+    "question": "No fechamento do mês, uma licença de saúde própria de estatutário ainda não foi publicada no DOE. O atestado está no acompanhamento do RH. Qual é a orientação corrigida pelo responsável pelo curso?",
+    "options": [
+      "Lançar 350 e acompanhar a publicação para a regularização.",
+      "Lançar 022, pois a falta de publicação determina falta injustificada.",
+      "Lançar 374 como alternativa equivalente indicada para esse caso.",
+      "Lançar 001 apenas com o atestado, sem aguardar a publicação."
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "A correção informada pelo responsável definiu o código 350 quando a licença não sair no DOE no mês. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH. Enquanto aguarda a publicação, a chefia lança 350. Após a publicação, o RH cuida do lançamento correspondente e das datas do DOE; a chefia acompanha e confere."
+  },
+  {
+    "id": "caso-familiar-doente",
+    "reviewId": "P050",
+    "tier": 2,
+    "category": "Saúde estatutária",
+    "question": "Uma servidora estatutária, em categoria abrangida pelo motivo, teve licença para cuidar de familiar doente concedida após inspeção médica e publicada no DOE. Qual motivo do curso trata da doença de pessoa da família?",
+    "options": [
+      "275",
+      "120",
+      "002",
+      "001"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O 002 corresponde à licença por doença de pessoa da família no caso apresentado, com inspeção médica e publicação no DOE. O lançamento é realizado pelo RH; a chefia acompanha e confere se o código e o período estão corretos."
+  },
+  {
+    "id": "caso-doacao-clt",
+    "reviewId": "P051",
+    "tier": 2,
+    "category": "Doação de sangue",
+    "question": "Um empregado CLT apresentou comprovante oficial de doação de sangue e o RH conferiu o atendimento aos requisitos e ao intervalo aplicável. Qual código o material apresenta para doação no regime CLT?",
+    "options": [
+      "202",
+      "324",
+      "325",
+      "130"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 27 apresenta 202 para doação de sangue no regime CLT."
+  },
+  {
+    "id": "caso-doacao-efp-homem",
+    "reviewId": "P052",
+    "tier": 2,
+    "category": "Doação de sangue",
+    "question": "Um servidor estatutário apresentou comprovante de doação de sangue. O controle de intervalos e limites foi conferido. Qual código do slide aparece para o grupo masculino de doação no EFP?",
+    "options": [
+      "202",
+      "275",
+      "324",
+      "325"
+    ],
+    "correct": 2,
+    "hint": "Confira o sexo no cadastro do servidor antes de definir o código de doação.",
+    "explanation": "O 324 corresponde à doação de sangue do grupo masculino no cenário do curso. Antes do lançamento, confira o sexo do servidor no cadastro, o comprovante, os intervalos e os limites aplicáveis."
+  },
+  {
+    "id": "caso-doacao-efp-mulher",
+    "reviewId": "P053",
+    "tier": 2,
+    "category": "Doação de sangue",
+    "question": "Uma servidora estatutária apresentou comprovante de doação de sangue e o RH conferiu os requisitos. Qual código do slide aparece para o grupo feminino de doação no EFP?",
+    "options": [
+      "325",
+      "324",
+      "202",
+      "278"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O slide 27 apresenta 325 no grupo feminino de doação no EFP."
+  },
+  {
+    "id": "caso-maternidade-clt",
+    "reviewId": "P054",
+    "tier": 2,
+    "category": "Parentalidade",
+    "question": "O RH recebeu um pedido de licença-maternidade de empregada CLT e está conferindo vínculo e documentos. Qual código o material associa à maternidade CLT no período padrão, antes da análise de qualquer prorrogação?",
+    "options": [
+      "402",
+      "059",
+      "137",
+      "279"
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O 137 corresponde à licença-maternidade CLT no cenário apresentado, antes de eventual prorrogação. O lançamento é realizado pelo RH; a chefia acompanha e confere o registro."
+  },
+  {
+    "id": "caso-gestante-efp",
+    "reviewId": "P055",
+    "tier": 2,
+    "category": "Parentalidade",
+    "question": "Uma servidora estatutária, em categoria abrangida pelo motivo, teve licença à gestante publicada no DOE. Qual código do curso corresponde a essa licença, em vez de copiar o motivo do grupo CLT/RGPS?",
+    "options": [
+      "279",
+      "137",
+      "402",
+      "280"
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "O 279 corresponde à licença à gestante no cenário estatutário apresentado, com publicação no DOE e enquadramento adequado. O lançamento é realizado pelo RH; a chefia acompanha e confere o registro."
+  },
+  {
+    "id": "caso-milhao-misto",
+    "reviewId": "P057",
+    "tier": 3,
+    "category": "Fechamento integrado",
+    "question": "No fechamento, há três casos: atraso curto de estatutário compensado no mesmo dia e dentro dos limites; licença-saúde estatutária sem DOE no mês; atestado CLT de um dia sem afastamentos relacionados. Qual sequência de códigos é proposta pelo material para análise desses casos?",
+    "options": [
+      "153, 350 e 120.",
+      "229, 001 e 315.",
+      "235, 022 e 361.",
+      "000, 374 e 275."
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "A associação proposta é 153 para o atraso compensado no cenário descrito, 350 para a licença estatutária sem DOE no mês e 120 para o atestado CLT de um dia no quadro do curso. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH. Enquanto aguarda a publicação, a chefia lança 350. Após a publicação, o RH cuida do lançamento correspondente e das datas do DOE; a chefia acompanha e confere."
+  },
+  {
+    "id": "caso-milhao-saude",
+    "reviewId": "P058",
+    "tier": 3,
+    "category": "Saúde integrada",
+    "question": "A equipe recebe quatro documentos: consulta parcial de estatutária de 40h, licença da própria saúde estatutária publicada no DOE, licença para cuidar de familiar e afastamento CLT prolongado. O que impede usar um único código de saúde para os quatro?",
+    "options": [
+      "Somente o nome do profissional, pois esse dado define o código independentemente do vínculo.",
+      "Nada: um comprovante médico permite repetir o mesmo código nos quatro pedidos.",
+      "A natureza da ausência, o vínculo, o período e os requisitos de cada situação são diferentes.",
+      "Apenas a data de entrega, pois todos os documentos de saúde têm o mesmo enquadramento."
+    ],
+    "correct": 2,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "Os slides distinguem saúde própria, familiar, ausência parcial e afastamento CLT. A documentação deve ser relacionada ao vínculo e ao procedimento aplicável. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "caso-milhao-paternidade",
+    "reviewId": "P059",
+    "tier": 3,
+    "category": "Divergência no material",
+    "question": "Ao conferir um pedido de paternidade, a chefia encontra orientações divergentes sobre o prazo. Qual conduta deve adotar antes de considerar o registro correto?",
+    "options": [
+      "Conferir a regra aplicável ao vínculo e ao evento com o RH e registrar a referência usada.",
+      "Usar 20 dias porque o maior prazo deve ser aplicado automaticamente.",
+      "Usar 5 dias porque o menor prazo elimina qualquer risco.",
+      "Calcular a média dos dois prazos e registrar o resultado."
+    ],
+    "correct": 0,
+    "hint": "Identifique o vínculo, o documento e a situação descrita antes de escolher o código.",
+    "explanation": "Em caso de divergência sobre o prazo, encaminhe a dúvida ao RH para confirmar a regra aplicável ao vínculo e à data do evento antes do lançamento."
+  },
+  {
+    "id": "real-022-falta",
+    "reviewId": "P061",
+    "tier": 0,
+    "category": "Falta injustificada",
+    "question": "Na conferência da frequência, foi constatada uma falta injustificada. Qual código deve ser lançado para essa ocorrência?",
+    "options": [
+      "022",
+      "001",
+      "350",
+      "047"
+    ],
+    "correct": 0,
+    "hint": "O responsável confirmou o código específico de falta injustificada.",
+    "explanation": "O código 022 é utilizado para falta injustificada, conforme orientação do responsável. Não deve ser usado apenas porque uma licença-saúde ainda está sem publicação no DOE."
+  },
+  {
+    "id": "real-001-doe",
+    "reviewId": "P062",
+    "tier": 0,
+    "category": "Licença-saúde",
+    "question": "O RH lançou 001 na frequência de uma licença-saúde estatutária publicada no DOE. Qual é a boa prática da chefia?",
+    "options": [
+      "Refazer o lançamento do RH para duplicar a conferência.",
+      "Considerar que todo lançamento do RH dispensa conferência.",
+      "Acompanhar e conferir se o código e o período estão corretos; encaminhar divergências ao RH.",
+      "Informar obrigatoriamente ao RH as datas da publicação no DOE."
+    ],
+    "correct": 2,
+    "hint": "O RH faz o lançamento; a chefia acompanha a correção do registro.",
+    "explanation": "O 001 corresponde à licença-saúde publicada no cenário do curso. Na rotina informada, o RH faz esse lançamento e cuida das datas do DOE. A chefia acompanha e verifica se o registro está correto, encaminhando eventual divergência ao RH. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH."
+  },
+  {
+    "id": "real-350-pendente",
+    "reviewId": "P063",
+    "tier": 1,
+    "category": "Licença-saúde",
+    "question": "Na conferência da chefia, uma licença-saúde estatutária ainda sem publicação no DOE aparece como 001. Qual código corresponde à situação, conforme a orientação da unidade, para encaminhar a divergência ao RH?",
+    "options": [
+      "350",
+      "001",
+      "022",
+      "374"
+    ],
+    "correct": 0,
+    "hint": "Identifique o código esperado e encaminhe a divergência ao RH; o RH cuida do lançamento vinculado ao DOE.",
+    "explanation": "Sem a publicação da licença-saúde no DOE, o código informado pelo responsável é 350. O 001 corresponde ao caso com publicação e o 022 à falta injustificada. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH. Enquanto aguarda a publicação, a chefia lança 350. Após a publicação, o RH cuida do lançamento correspondente e das datas do DOE; a chefia acompanha e confere."
+  },
+  {
+    "id": "real-banco-debito",
+    "reviewId": "P064",
+    "tier": 1,
+    "category": "Boas práticas · emenda de feriado",
+    "question": "Uma pessoa ficou ausente na emenda de feriado. As horas combinadas para compensação não foram trabalhadas, mas alguém quer registrar a pendência como paga. Qual é a boa prática?",
+    "options": [
+      "Dar baixa porque a emenda já passou, mesmo sem comprovação das horas.",
+      "Tratar a autorização para a emenda como comprovação de que as horas já foram pagas.",
+      "Não registrar como paga uma compensação que não foi cumprida; conferir os registros e manter a pendência para o tratamento correto.",
+      "Marcar como paga porque a pessoa afirmou que compensaria depois."
+    ],
+    "correct": 2,
+    "hint": "Autorização ou promessa de compensar não comprova que as horas foram pagas.",
+    "explanation": "O responsável relatou situações em que as horas da emenda não foram compensadas, mas aparecem como pagas. A boa prática é conferir a compensação efetivamente cumprida e não dar baixa sem fundamento. Esta questão não pede código de frequência."
+  },
+  {
+    "id": "real-022-nao-pendencia",
+    "reviewId": "P065",
+    "tier": 2,
+    "category": "Comparação de códigos",
+    "question": "Há dois registros para analisar: uma falta injustificada e uma licença-saúde estatutária que ainda não foi publicada no DOE. Qual sequência de códigos corresponde a essas duas situações?",
+    "options": [
+      "022 para a falta injustificada e 350 para a licença sem publicação.",
+      "350 para a falta injustificada e 022 para a licença sem publicação.",
+      "022 para as duas situações, pois ambas representam ausência.",
+      "001 para a falta injustificada e 350 para a licença sem publicação."
+    ],
+    "correct": 0,
+    "hint": "Falta injustificada e pendência de publicação são situações diferentes.",
+    "explanation": "Falta injustificada: 022. Licença-saúde estatutária ainda sem publicação no DOE: 350. A pendência de publicação não justifica classificar automaticamente a licença como falta injustificada. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH. Enquanto aguarda a publicação, a chefia lança 350. Após a publicação, o RH cuida do lançamento correspondente e das datas do DOE; a chefia acompanha e confere."
+  },
+  {
+    "id": "real-banco-saldo",
+    "reviewId": "P066",
+    "tier": 2,
+    "category": "Banco de horas",
+    "question": "O banco tinha 12 horas disponíveis. Foram utilizadas oito horas desse saldo para compensar uma ausência. Considerando apenas essa movimentação, qual é o saldo após o abatimento?",
+    "options": [
+      "Doze horas.",
+      "Oito horas.",
+      "Quatro horas.",
+      "Vinte horas."
+    ],
+    "correct": 2,
+    "hint": "Desconte do saldo inicial somente as horas utilizadas.",
+    "explanation": "12 horas disponíveis menos 8 horas utilizadas resultam em 4 horas. A questão trata apenas da boa prática de controle de um saldo real utilizado na compensação, sem código de frequência. A existência desse saldo deve ter sido conferida antes do abatimento."
+  },
+  {
+    "id": "real-milhao-tres-codigos",
+    "reviewId": "P067",
+    "tier": 3,
+    "category": "Fechamento com códigos",
+    "question": "No fechamento há três ocorrências: licença-saúde estatutária com publicação no DOE; licença-saúde estatutária ainda sem publicação; falta injustificada. Qual sequência de códigos corresponde, nessa ordem, aos três casos?",
+    "options": [
+      "001, 350 e 022.",
+      "350, 001 e 022.",
+      "001, 022 e 350.",
+      "022, 350 e 001."
+    ],
+    "correct": 0,
+    "hint": "Separe licença publicada, pendência de publicação e falta injustificada.",
+    "explanation": "Com publicação no DOE: 001. Sem publicação: 350. Falta injustificada: 022. São os três enquadramentos confirmados pelo responsável. Responsabilidade operacional: o RH cuida dos lançamentos vinculados ao DOE e das datas de publicação; a chefia não precisa informar essas datas. O RH já lança 001, 009 e 047. A chefia acompanha e confere os registros, encaminhando divergências ao RH. Enquanto aguarda a publicação, a chefia lança 350. Após a publicação, o RH cuida do lançamento correspondente e das datas do DOE; a chefia acompanha e confere."
+  },
+  {
+    "id": "real-milhao-banco-e-falta",
+    "reviewId": "P068",
+    "tier": 3,
+    "category": "Boas práticas · banco de horas",
+    "question": "Ao conferir as emendas de feriado, você encontra duas situações: uma pessoa efetivamente utilizou oito horas de um saldo conferido de dez horas; outra não cumpriu a compensação combinada, mas está marcada como paga. Qual conduta é adequada?",
+    "options": [
+      "Acrescentar oito horas ao primeiro saldo e dar baixa no segundo com base na promessa de compensar.",
+      "Zerar os dois bancos para encerrar a conferência, independentemente dos registros.",
+      "Abater as oito horas efetivamente utilizadas no primeiro banco, restando duas; no segundo caso, revisar a baixa indevida, sem considerar pagas horas não compensadas.",
+      "Manter os dois casos como pagos, pois a emenda de feriado já foi autorizada."
+    ],
+    "correct": 2,
+    "hint": "Saldo realmente utilizado e compensação apenas declarada não são equivalentes.",
+    "explanation": "No primeiro caso, dez horas reais menos oito utilizadas deixam duas horas. No segundo, a compensação não cumprida não deve aparecer como paga: a baixa precisa ser revisada conforme os registros e o procedimento da unidade. O foco é a boa prática, sem código de frequência."
+  },
+  {
+    "id": "rodada2-69",
+    "reviewId": "P069",
+    "tier": 1,
+    "category": "350 antes da publicação",
+    "question": "Uma chefia recebe atestado de licença-saúde estatutária e confere que a publicação ainda não saiu no DOE. Qual providência corresponde à rotina da unidade?",
+    "options": [
+      "Lançar 350 enquanto aguarda a publicação.",
+      "Lançar 001 apenas com o atestado.",
+      "Lançar 022 porque ainda não há publicação.",
+      "Pedir que o servidor escolha entre 001 e 350."
+    ],
+    "correct": 0,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "A chefia lança 350 enquanto aguarda a publicação. O RH cuida do lançamento vinculado ao DOE e das datas de publicação."
+  },
+  {
+    "id": "rodada2-70",
+    "reviewId": "P070",
+    "tier": 1,
+    "category": "Conferência do RH",
+    "question": "A chefia identifica que o período do 001 lançado pelo RH diverge do período da licença publicada. Qual conduta é adequada?",
+    "options": [
+      "Trocar todo o período por 022.",
+      "Aceitar a diferença porque o lançamento veio do RH.",
+      "Encaminhar a divergência ao RH para análise e correção.",
+      "Duplicar o 001 para cobrir a diferença."
+    ],
+    "correct": 2,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Os lançamentos do RH também devem ser acompanhados pela chefia. A divergência de período deve ser encaminhada ao RH."
+  },
+  {
+    "id": "rodada2-71",
+    "reviewId": "P071",
+    "tier": 2,
+    "category": "Férias e licença",
+    "question": "Durante as férias, um servidor entra em licença-saúde regularmente concedida. Como tratar o saldo de férias segundo a orientação da unidade?",
+    "options": [
+      "Suspender o uso das férias na licença e retomar o saldo após o término, acompanhando o RH.",
+      "Considerar que férias e licença consomem os mesmos dias simultaneamente.",
+      "Descartar o saldo de férias ainda não utilizado.",
+      "Mudar a data da licença para evitar a coincidência."
+    ],
+    "correct": 0,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Na orientação da unidade, a licença-saúde suspende o uso das férias, que retornam após seu término. A chefia acompanha a regularização com o RH."
+  },
+  {
+    "id": "rodada2-72",
+    "reviewId": "P072",
+    "tier": 1,
+    "category": "Cadastro eleitoral",
+    "question": "O servidor entregou a declaração eleitoral, mas ela ainda não foi cadastrada no Sistema de Gestão de Pessoas. Ele já pode considerar as folgas liberadas?",
+    "options": [
+      "Sim, se escolher um dia com equipe completa.",
+      "Sim, desde que não seja no mês da eleição.",
+      "Não. A declaração deve ser encaminhada e cadastrada antes de usufruir as folgas.",
+      "Sim, pois entregar a declaração substitui o cadastro."
+    ],
+    "correct": 2,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "A entrega do documento e o cadastro são etapas diferentes. Após o cadastro, as datas das folgas são organizadas com a chefia."
+  },
+  {
+    "id": "rodada2-73",
+    "reviewId": "P073",
+    "tier": 2,
+    "category": "Compensação comprovada",
+    "question": "Após uma emenda de feriado, consta que oito horas foram pagas, mas nenhuma marcação comprova reposição e não foi utilizado saldo real. Qual boa prática deve orientar a conferência?",
+    "options": [
+      "Não considerar as horas pagas; esclarecer a divergência com base nos registros.",
+      "Manter como pago porque havia intenção de compensar.",
+      "Criar crédito no banco para encerrar a pendência.",
+      "Presumir a reposição porque o mês foi fechado."
+    ],
+    "correct": 0,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Promessa não equivale a compensação cumprida. Confira a reposição ou a utilização efetiva de saldo real; não marque como pagas horas não compensadas."
+  },
+  {
+    "id": "rodada2-75",
+    "reviewId": "P075",
+    "tier": 2,
+    "category": "Teletrabalho aprovado",
+    "question": "O plano de teletrabalho está pronto, mas uma aprovação necessária permanece pendente. Qual análise deve ocorrer antes de considerar o 372 regular?",
+    "options": [
+      "Consultar o RH sobre os requisitos vigentes e conferir se todas as aprovações necessárias foram concluídas.",
+      "Tratar o plano pronto como aprovação automática.",
+      "Usar 372 apenas porque o servidor já está em casa.",
+      "Dispensar a aprovação quando o período é curto."
+    ],
+    "correct": 0,
+    "hint": "Plano pronto não equivale a aprovação concluída. Consulte o RH sobre os requisitos vigentes.",
+    "explanation": "Consulte o RH sobre os requisitos vigentes necessários ao teletrabalho. O plano pronto não substitui as aprovações exigidas; confira autorização e requisitos antes de considerar o enquadramento regular."
+  },
+  {
+    "id": "rodada2-76",
+    "reviewId": "P076",
+    "tier": 1,
+    "category": "Atestado de um dia",
+    "question": "Um servidor efetivo apresenta atestado de um único dia para consulta, com os demais requisitos do 275 atendidos. Qual cuidado continua necessário?",
+    "options": [
+      "Trocar automaticamente por 120 porque há atestado.",
+      "Informar que nunca poderá haver perícia nesse caso.",
+      "Cadastrar o atestado no SOU.SP.GOV, mesmo sendo um único dia.",
+      "Dispensar o cadastro por ser apenas um dia."
+    ],
+    "correct": 2,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Mesmo para um único dia, o atestado deve ser cadastrado no SOU.SP.GOV. Dependendo da situação, poderá ser agendada perícia médica."
+  },
+  {
+    "id": "rodada2-77",
+    "reviewId": "P077",
+    "tier": 1,
+    "category": "Doação e cadastro",
+    "question": "Ao conferir uma doação de sangue de estatutário, o apontador encontra um lançamento anterior e pensa em copiá-lo. O que deve verificar antes?",
+    "options": [
+      "Sexo no cadastro, comprovante, intervalos e limites aplicáveis.",
+      "Somente o código usado no mês anterior.",
+      "Apenas se há um dia sem marcação.",
+      "Somente o nome do posto de coleta."
+    ],
+    "correct": 0,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Antes de definir o motivo da doação, confira o sexo do servidor no cadastro e os demais requisitos; não copie um lançamento sem verificar o caso."
+  },
+  {
+    "id": "rodada2-78",
+    "reviewId": "P078",
+    "tier": 2,
+    "category": "Consulta parcial",
+    "question": "Uma servidora estatutária de 40 horas semanais apresentou comprovante de consulta de duas horas. Qual análise evita registrar indevidamente o dia inteiro?",
+    "options": [
+      "Usar 022 porque houve ausência de marcação nessas horas.",
+      "Considerar qualquer comprovante como afastamento integral.",
+      "Conferir os requisitos do 278, a jornada e o período comprovado.",
+      "Registrar 001 porque toda consulta é licença-saúde publicada."
+    ],
+    "correct": 2,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Para 40 horas semanais, o 278 pode ser utilizado quando atendidas as regras aplicáveis. O período comprovado deve ser confrontado com a jornada."
+  },
+  {
+    "id": "rodada2-79",
+    "reviewId": "P079",
+    "tier": 3,
+    "category": "Conferência integrada",
+    "question": "Há férias lançadas pelo RH, licença-saúde sem publicação e uma emenda registrada como paga sem reposição comprovada. Qual sequência de cuidados é adequada?",
+    "options": [
+      "Conferir o 047 com o RH; lançar 350 enquanto aguarda publicação; esclarecer a compensação sem considerá-la automaticamente paga.",
+      "Refazer o 047; lançar 001 apenas com atestado; manter a emenda paga por intenção.",
+      "Ignorar férias; usar 022 para a licença sem DOE; criar saldo para a emenda.",
+      "Alterar as datas de todos os casos para evitar pendências."
+    ],
+    "correct": 0,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "Cada fato exige seu cuidado: RH lança 047 e a chefia confere; a chefia lança 350 enquanto aguarda publicação; compensação precisa de reposição ou saldo real efetivamente utilizado."
+  },
+  {
+    "id": "rodada2-80",
+    "reviewId": "P080",
+    "tier": 3,
+    "category": "Licenças conferidas",
+    "question": "Na frequência aparecem 009 e 279 lançados pelo RH. Um deles tem período diferente da documentação do caso. Qual resposta reúne a responsabilidade e a boa prática?",
+    "options": [
+      "Se o RH lançou, os períodos não precisam ser conferidos.",
+      "A chefia deve substituir ambos por 350 independentemente da situação.",
+      "O RH faz os lançamentos; a chefia acompanha e encaminha a divergência de período ao RH.",
+      "A chefia deve duplicar ambos para confirmar que conferiu."
+    ],
+    "correct": 2,
+    "hint": "Relacione a situação, a responsabilidade e a comprovação antes de decidir.",
+    "explanation": "O RH realiza os lançamentos de licença-prêmio e licença à gestante. A chefia acompanha código e período e encaminha divergências ao RH."
+  }
+]

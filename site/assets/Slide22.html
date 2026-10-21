@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Slide Abertura Módulo 5 - Interativo</title>
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
+    <link rel="stylesheet" href="vendor/fonts.css">
+    <link rel="stylesheet" href="vendor/fontawesome.min.css">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background-color: #f0f0f0; -webkit-font-smoothing: antialiased; }
+        .slide-container { width: 1600px; min-height: 900px; display: flex; background-color: white; overflow: hidden; position: relative; }
+        .bg-sp-blue { background-color: #0055A4; } .text-sp-blue { color: #0055A4; } .bg-sp-red { background-color: #DB241E; }
+        
+        /* Animação do Carrinho (Balanço) */
+        @keyframes rock {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        .icon-rock { animation: rock 3s ease-in-out infinite; transform-origin: bottom center; }
+
+        /* Animação de Confetes (Caindo) */
+        @keyframes confettiFall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(800px) rotate(360deg); opacity: 0; }
+        }
+        .confetti { position: absolute; width: 10px; height: 10px; background-color: white; opacity: 0; animation: confettiFall 4s linear infinite; }
+        .c1 { left: 10%; animation-delay: 0s; background: #FFD1DC; }
+        .c2 { left: 30%; animation-delay: 1.5s; background: #ADD8E6; }
+        .c3 { left: 60%; animation-delay: 2.5s; background: #FFFFE0; }
+        .c4 { left: 80%; animation-delay: 0.5s; background: #98FB98; }
+
+        /* --- CARDS SUAVES --- */
+        .code-card { 
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Efeito elástico */
+            cursor: pointer; 
+            border-left-width: 4px;
+            background: white;
+        }
+        
+        .code-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1); }
+
+        /* Cores Temáticas Pastel */
+        .card-mom { border-left-color: #EC4899; } /* Rosa */
+        .card-mom:hover { background-color: #FDF2F8; border-color: #DB2777; }
+
+        .card-dad { border-left-color: #3B82F6; } /* Azul */
+        .card-dad:hover { background-color: #EFF6FF; border-color: #2563EB; }
+
+        .card-adoption { border-left-color: #8B5CF6; } /* Roxo */
+        .card-adoption:hover { background-color: #F5F3FF; border-color: #7C3AED; }
+
+        .card-plus { border-left-color: #10B981; } /* Verde (Prorrogação) */
+        .card-plus:hover { background-color: #ECFDF5; border-color: #059669; }
+
+        /* Animações de Entrada */
+        .animate-zoom-in { animation: zoomIn 1.2s ease-out forwards; opacity: 0; transform: scale(1.1); }
+        .animate-slide-left { animation: slideLeft 1s ease-out forwards; opacity: 0; transform: translateX(30px); }
+        @keyframes zoomIn { to { opacity: 1; transform: scale(1); } }
+        @keyframes slideLeft { to { opacity: 1; transform: translateX(0); } }
+    </style>
+    
+</head>
+<body>
+
+<div class="slide-container">
+    <div class="w-4/12 bg-sp-blue flex flex-col justify-center items-center relative overflow-hidden text-white p-8 animate-zoom-in">
+        <div class="confetti c1"></div>
+        <div class="confetti c2"></div>
+        <div class="confetti c3"></div>
+        <div class="confetti c4"></div>
+        
+        <div class="absolute top-0 left-0 w-32 h-32 bg-white opacity-5 rounded-br-full"></div>
+        <div class="absolute bottom-0 right-0 w-48 h-48 bg-black opacity-10 rounded-tl-full"></div>
+        
+        <div class="z-10 text-center">
+            <div class="mb-6 inline-flex items-center justify-center w-32 h-32 rounded-full border-4 border-white border-opacity-30 bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm">
+                <i class="fas fa-baby-carriage text-6xl icon-rock"></i>
+            </div>
+            <p class="text-xl font-light uppercase tracking-widest mb-2 opacity-90">Módulo</p>
+            <h1 class="text-9xl font-black leading-none mb-4 opacity-95">05</h1>
+            <div class="h-1 w-16 bg-white mx-auto opacity-50 rounded"></div>
+        </div>
+    </div>
+    
+    <div class="w-8/12 flex flex-col p-16 relative bg-white animate-slide-left">
+        <div class="absolute top-12 right-16 flex items-center space-x-1"><div class="h-2 w-8 bg-black"></div><div class="h-2 w-8 bg-gray-200"></div><div class="h-2 w-8 bg-black"></div><div class="h-2 w-8 bg-sp-red"></div></div>
+        
+        <div class="mb-8 mt-4">
+            <h2 class="text-5xl font-black text-gray-800 leading-tight mb-4 tracking-tight">Maternidade, Paternidade <br><span class="text-sp-blue">e Adoção</span></h2>
+            <p class="text-xl text-gray-600 font-open-sans font-light leading-relaxed border-l-4 border-sp-blue pl-6 py-2 bg-blue-50 rounded-r-lg">
+                Garantir direitos sem prejuízos e com códigos corretos. Proteção à família e novos códigos.
+            </p>
+        </div>
+        
+        <div class="mb-8">
+            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center"><i class="fas fa-tags mr-2 text-sp-blue"></i> Códigos em Destaque (Passe o mouse)</h3>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="code-card card-mom border border-pink-100 rounded-lg p-4 shadow-sm flex items-center">
+                    <span class="font-mono font-black text-2xl text-pink-500 mr-3">137</span>
+                    <div><p class="text-sm font-bold text-gray-700">Maternidade (CLT)</p><p class="text-xs text-gray-500">120 Dias</p></div>
+                </div>
+                
+                <div class="code-card card-mom border border-pink-100 rounded-lg p-4 shadow-sm flex items-center">
+                    <span class="font-mono font-black text-2xl text-pink-500 mr-3">279</span>
+                    <div><p class="text-sm font-bold text-gray-700">Gestante (EFP)</p><p class="text-xs text-gray-500">180 Dias</p></div>
+                </div>
+
+                <div class="code-card card-plus border border-green-100 rounded-lg p-4 shadow-sm flex items-center col-span-2">
+                    <span class="font-mono font-black text-2xl text-green-600 mr-3">402</span>
+                    <div><p class="text-sm font-bold text-gray-700">Prorrogação RGPS (+60 dias)</p><p class="text-xs text-gray-500">Complementa os 120 do INSS (LC 1395/2023)</p></div>
+                </div>
+
+                <div class="code-card card-dad border border-blue-100 rounded-lg p-4 shadow-sm flex items-center">
+                    <span class="font-mono font-black text-2xl text-blue-500 mr-3">059</span>
+                    <div><p class="text-sm font-bold text-gray-700">Paternidade</p><p class="text-xs text-gray-500">20 dias</p></div>
+                </div>
+                
+                <div class="code-card card-adoption border border-purple-100 rounded-lg p-4 shadow-sm flex items-center">
+                    <span class="font-mono font-black text-2xl text-purple-600 mr-3">280</span>
+                    <div><p class="text-sm font-bold text-gray-700">Adoção</p><p class="text-xs text-gray-500">Idade da criança</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-auto bg-blue-50 border-l-4 border-sp-blue p-5 rounded-r-lg shadow-sm flex items-start">
+            <div class="flex-shrink-0"><i class="fas fa-balance-scale text-2xl text-sp-blue mt-1"></i></div>
+            <div class="ml-4">
+                <h4 class="text-lg font-bold text-gray-800 mb-1">Base Legal Importante</h4>
+                <p class="text-gray-700 text-sm">Atenção à <strong>LC 1395/2023</strong> para prorrogação de Licença Maternidade RGPS (+60 dias), totalizando 180 dias (120 do INSS + 60 do Estado).</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-6 right-16 text-xs text-gray-400 font-light">Slide 22 de 29</div>
+    </div>
+</div>
+<script src="script.js"></script> 
+</body>
+</html>

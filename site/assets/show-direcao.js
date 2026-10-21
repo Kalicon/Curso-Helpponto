@@ -1,0 +1,13 @@
+(()=>{'use strict';const reduced=matchMedia('(prefers-reduced-motion: reduce)'),g=window.gsap,presenter=document.querySelector('.presenter'),image=document.querySelector('.leonor-on-stage');let timer=0,pose='apresenta';
+ const banner=document.createElement('div');banner.className='show-chapter';banner.hidden=true;banner.setAttribute('role','status');banner.innerHTML='<span aria-hidden="true">✦</span><div><small>LEONOR APRESENTA</small><strong></strong><p></p></div><button type="button" aria-label="Fechar anúncio">×</button>';document.querySelector('#show-play .desk').prepend(banner);
+ function setPose(next){pose=next;image.src='assets/personagens/leonor-'+next+'.svg';presenter.dataset.pose=next;}
+ // Mantém as poses de direção quando o apresentador atualiza sua fala.
+ new MutationObserver(()=>{const wanted='assets/personagens/leonor-'+pose+'.svg';if(image.getAttribute('src')!==wanted)image.setAttribute('src',wanted);}).observe(image,{attributes:true,attributeFilter:['src']});
+ function announce(title,text){clearTimeout(timer);banner.querySelector('strong').textContent=title;banner.querySelector('p').textContent=text;banner.hidden=false;if(g&&!reduced.matches)g.fromTo(banner,{y:-14,opacity:0},{y:0,opacity:1,duration:.4,clearProps:'transform,opacity'});timer=setTimeout(()=>banner.hidden=true,6500);}
+ banner.querySelector('button').addEventListener('click',()=>{clearTimeout(timer);banner.hidden=true;});
+ document.addEventListener('show:question',e=>{setPose('apresenta');const n=e.detail.level;if(n===0)announce('As luzes acenderam. O palco é seu!','Dez decisões, quatro ajudas e a Leonor com você. Leia, escolha e confirme.');else if(n===3)announce('Agora é jogo sério.','Você já protegeu 10 mil pontos. Vamos aplicar esse conhecimento?');else if(n===6)announce('Bem-vindo à reta decisiva.','Cem mil pontos protegidos. Cada detalhe do caso faz diferença.');else if(n===9)announce('A pergunta de UM MILHÃO.','Respire, confira suas ajudas e faça sua escolha.');else banner.hidden=true;});
+ document.addEventListener('show:confirm',()=>setPose('suspense'));
+ document.getElementById('help-leonor').addEventListener('click',()=>setPose('dica'));
+ document.addEventListener('show:answer',e=>{setPose(e.detail.hit?'vitoria':'dica');if(e.detail.hit&&[2,5,9].includes(e.detail.level)){announce(e.detail.level===9?'UM MILHÃO. O palco é seu!':e.detail.level===5?'100 MIL! Seu conhecimento vai longe.':'10 MIL! Primeiro patamar conquistado.','Essa conquista está protegida. Comemore antes do próximo desafio!');if(g&&!reduced.matches)g.fromTo(image,{y:0},{y:-12,duration:.22,repeat:3,yoyo:true,clearProps:'transform'});}});
+ document.addEventListener('show:result',()=>{clearTimeout(timer);banner.hidden=true;});
+})();

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Slide 8.5 - Código 278</title>
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
+    <link rel="stylesheet" href="vendor/fonts.css">
+    <link rel="stylesheet" href="vendor/fontawesome.min.css">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background-color: #f0f0f0; -webkit-font-smoothing: antialiased; }
+        .slide-container { width: 1600px; min-height: 900px; display: flex; flex-direction: column; background-color: white; overflow: hidden; position: relative; }
+        .bg-sp-blue { background-color: #0055A4; } .text-sp-blue { color: #0055A4; } .text-sp-red { color: #DB241E; }
+        
+        .code-card { transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .code-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        
+        /* Animações */
+        .animate-enter-right { animation: enterRight 0.8s ease-out forwards; opacity: 0; transform: translateX(40px); }
+        .animate-fade-down { animation: fadeDown 0.8s ease-out forwards; opacity: 0; transform: translateY(-20px); }
+        @keyframes enterRight { to { opacity: 1; transform: translateX(0); } }
+        @keyframes fadeDown { to { opacity: 1; transform: translateY(0); } }
+    </style>
+    
+</head>
+<body>
+    <div class="slide-container">
+        <div class="h-24 bg-white px-12 flex items-center justify-between border-b border-gray-100 relative z-20 animate-fade-down">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mr-4 border border-purple-100"><i class="fas fa-hourglass-half text-purple-600 text-2xl"></i></div>
+                <div><h1 class="text-3xl font-black text-gray-800 uppercase tracking-tight">Ausência Médica Parcial</h1><p class="text-gray-500 text-sm font-medium">Saídas Temporárias para Saúde (LC 1041/2008)</p></div>
+            </div>
+            <div class="flex items-center space-x-1"><div class="h-1.5 w-6 bg-black"></div><div class="h-1.5 w-6 bg-white border border-gray-200"></div><div class="h-1.5 w-6 bg-black"></div><div class="h-1.5 w-6 bg-red-600"></div></div>
+        </div>
+
+        <div class="flex-1 p-10 bg-gray-50 flex gap-8 relative">
+            
+            <div class="w-4/12 flex flex-col animate-enter-right" style="animation-delay: 0.1s;">
+                <div class="code-card bg-white rounded-2xl border-t-8 border-purple-600 shadow-lg flex-1 flex flex-col items-center justify-center p-8 relative">
+                    <div class="absolute top-0 right-0 p-4 opacity-5"><i class="fas fa-stopwatch text-9xl text-purple-600"></i></div>
+                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Código Oficial</p>
+                    <h1 class="text-8xl font-black text-purple-700 mb-2 tracking-tighter">278</h1>
+                    <div class="bg-purple-50 px-4 py-2 rounded-lg mb-6"><p class="text-purple-800 font-bold text-sm uppercase">Estatutários / Comissão</p></div>
+                    
+                    <div class="w-full border-t border-gray-100 pt-6 space-y-4">
+                        <div class="flex justify-between items-center"><span class="text-sm text-gray-500">Aux. Transporte</span><i class="fas fa-check-circle text-green-500 text-lg"></i></div>
+                        <div class="flex justify-between items-center"><span class="text-sm text-gray-500">Aux. Alimentação</span><i class="fas fa-check-circle text-green-500 text-lg"></i></div>
+                        <div class="flex justify-between items-center"><span class="text-sm text-gray-500">Contagem Tempo</span><i class="fas fa-check-circle text-green-500 text-lg"></i></div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 bg-red-50 border border-red-200 p-4 rounded-xl flex items-center shadow-sm">
+                    <i class="fas fa-ban text-red-500 text-2xl mr-3"></i>
+                    <div><p class="text-xs font-bold text-red-700 uppercase">Restrição</p><p class="text-sm text-gray-700 leading-tight">Não se aplica a servidores <strong>CLT</strong>.</p></div>
+                </div>
+            </div>
+
+            <div class="w-8/12 flex flex-col gap-4 animate-enter-right" style="animation-delay: 0.3s;">
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500 flex items-start">
+                    <div class="bg-purple-100 p-3 rounded-full mr-5 shrink-0"><i class="fas fa-clock text-purple-600 text-xl"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Limite de 3 Horas Diárias</h3>
+                        <p class="text-gray-600 mt-1">Para entradas tardias, saídas antecipadas ou saídas intermediárias. <br><span class="text-sm text-gray-400 italic">Obrigatório apresentar atestado comprovando o período de permanência.</span></p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500 flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-5 shrink-0"><i class="fas fa-briefcase text-blue-600 text-xl"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800">Requisito de Jornada (40h)</h3>
+                        <p class="text-gray-600 mt-1">Válido apenas para quem cumpre <strong>40 horas semanais</strong> (ou 35h-aula para docentes).</p>
+                        <div class="mt-2 inline-block bg-gray-100 px-3 py-1 rounded text-xs text-gray-600 font-medium"><i class="fas fa-info-circle mr-1"></i> Vale para acúmulo de cargos se a soma atingir 40h.</div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-xl shadow-sm border border-green-100 flex items-center justify-between relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-10"><i class="fas fa-thumbs-up text-8xl text-green-600"></i></div>
+                    <div class="z-10">
+                        <h3 class="text-lg font-bold text-green-800 mb-1"><i class="fas fa-unlock mr-2"></i>Sem Compensação</h3>
+                        <p class="text-green-700 text-sm">Diferente da saída particular (235), neste código o servidor <strong>fica desobrigado de compensar</strong> as horas, desde que comunique previamente a chefia.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="h-10 bg-white border-t border-gray-200 flex items-center justify-between px-12 text-xs text-gray-400">
+            <p><i class="fas fa-book mr-1"></i> Base Legal: Lei Complementar nº 1.041/2008</p>
+            <p>Slide Extra (8.5)</p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Slide Capa - Dashboard Automático</title>
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
+    <link rel="stylesheet" href="vendor/fonts.css">
+    <link rel="stylesheet" href="vendor/fontawesome.min.css">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background-color: #f0f0f0; -webkit-font-smoothing: antialiased; }
+        .slide-container { width: 1600px; min-height: 900px; display: flex; background-color: white; overflow: hidden; position: relative; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        .bg-sp-blue { background-color: #0055A4; }
+        .text-sp-blue { color: #0055A4; }
+        
+        /* Efeito de Vidro e Padrão */
+        .glass-panel { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); }
+        .pattern-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2px); background-size: 30px 30px; }
+        
+        /* --- A MÁGICA DO LOOP AUTOMÁTICO COMEÇA AQUI --- */
+        
+        /* 1. Animação do Cartão (Cresce e Brilha) */
+        @keyframes cardCycle {
+            0%, 100% { transform: translateY(0) scale(1); background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); } /* Estado Normal */
+            5%, 25% { transform: translateY(-5px) scale(1.05); background: rgba(255, 255, 255, 0.25); border-color: rgba(255, 255, 255, 0.8); } /* Estado Ativo */
+            30% { transform: translateY(0) scale(1); background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); } /* Volta ao Normal */
+        }
+
+        /* 2. Animação do Texto (Aparece e Desaparece) */
+        @keyframes textReveal {
+            0%, 100% { opacity: 0; max-height: 0; margin-top: 0; }
+            5%, 25% { opacity: 1; max-height: 50px; margin-top: 8px; }
+            30% { opacity: 0; max-height: 0; margin-top: 0; }
+        }
+
+        /* 3. Animação do Ícone (Encolhe um pouco) */
+        @keyframes iconMove {
+            0%, 100% { transform: scale(1); margin-bottom: 0; }
+            5%, 25% { transform: scale(0.8); margin-bottom: 5px; }
+            30% { transform: scale(1); margin-bottom: 0; }
+        }
+
+        /* Aplicação das Animações */
+        .stat-card { animation: cardCycle 12s infinite; }
+        .stat-value { overflow: hidden; animation: textReveal 12s infinite; }
+        .stat-card i { animation: iconMove 12s infinite; }
+
+        /* Delays para criar a sequência (Cada um começa em um tempo diferente) */
+        .delay-0 { animation-delay: 0s; }
+        .delay-3 { animation-delay: 3s; }
+        .delay-6 { animation-delay: 6s; }
+        .delay-9 { animation-delay: 9s; }
+
+        /* --- FIM DAS ANIMAÇÕES DO LOOP --- */
+
+        /* Outras animações de entrada */
+        .animate-slide-right { animation: slideRight 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        .animate-fade-up { animation: fadeUp 1s ease-out 0.3s forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes slideRight { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+        @keyframes loadBar { 0% { width: 0; } 100% { width: 100%; } }
+        .loading-bar { width: 0; animation: loadBar 2s ease-out forwards; }
+    </style>
+    
+</head>
+<body>
+    <div class="slide-container">
+        
+        <div class="w-5/12 bg-sp-blue relative flex flex-col justify-between overflow-hidden animate-slide-right shadow-2xl z-10">
+            <div class="absolute inset-0 pattern-grid opacity-20"></div>
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full filter blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-400 opacity-10 rounded-full filter blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+
+            <div class="p-10 z-10 relative">
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                    <p class="text-blue-100 text-xs font-mono uppercase tracking-widest">Sistema Online • v.2025</p>
+                </div>
+                <h2 class="text-white text-3xl font-bold tracking-tight">Gestão de Pessoas</h2>
+                <div class="h-1 w-20 bg-blue-400 mt-4 rounded-full loading-bar"></div>
+            </div>
+
+            <div class="flex-1 flex flex-col justify-center px-10 z-10">
+                <p class="text-blue-200 text-sm mb-6 font-mono text-center"><i class="fas fa-sync fa-spin mr-2"></i>Monitoramento em Tempo Real</p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="stat-card delay-0 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center h-32">
+                        <i class="fas fa-clock text-4xl text-white delay-0"></i>
+                        <div class="stat-value delay-0">
+                            <p class="text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-blue-100">Pontualidade</p>
+                        </div>
+                    </div>
+                    <div class="stat-card delay-3 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center h-32">
+                        <i class="fas fa-calendar-check text-4xl text-white delay-3"></i>
+                        <div class="stat-value delay-3">
+                            <p class="text-2xl font-bold text-white">30 Dias</p>
+                            <p class="text-xs text-blue-100">Férias</p>
+                        </div>
+                    </div>
+                    <div class="stat-card delay-6 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center h-32">
+                        <i class="fas fa-file-medical text-4xl text-white delay-6"></i>
+                        <div class="stat-value delay-6">
+                            <p class="text-2xl font-bold text-white">Zero</p>
+                            <p class="text-xs text-blue-100">Erros</p>
+                        </div>
+                    </div>
+                    <div class="stat-card delay-9 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center text-center h-32">
+                        <i class="fas fa-users text-4xl text-white delay-9"></i>
+                        <div class="stat-value delay-9">
+                            <p class="text-2xl font-bold text-white">Equipe</p>
+                            <p class="text-xs text-blue-100">Protegida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 z-10 bg-black bg-opacity-10 backdrop-filter backdrop-blur-sm border-t border-white border-opacity-10">
+                <div class="flex justify-between items-center text-blue-100 text-xs font-mono">
+                    <span>RH / DATA CENTER</span>
+                    <span>SP.GOV.BR</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-7/12 flex flex-col justify-center p-20 relative animate-fade-up">
+            <div class="absolute top-12 left-20">
+                <div class="flex items-center space-x-2 mb-2">
+                    <div class="h-2 w-8 bg-black"></div><div class="h-2 w-8 bg-gray-200"></div><div class="h-2 w-8 bg-black"></div><div class="h-2 w-8 bg-red-600"></div>
+                </div>
+                <p class="text-xs text-gray-500 uppercase tracking-wider font-bold">Governo do Estado de São Paulo</p>
+            </div>
+
+            <div class="mt-12">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-sp-blue text-xs font-bold uppercase tracking-wide mb-6 border border-blue-100">
+                    <span class="w-2 h-2 rounded-full bg-sp-blue mr-2"></span> Treinamento Oficial
+                </div>
+                <h1 class="text-6xl font-black text-gray-800 leading-tight mb-2 tracking-tight">Domínio do <br><span class="text-sp-blue">Apontamento</span></h1>
+                <h2 class="text-4xl font-light text-gray-500 mb-8">de Frequência</h2>
+                
+                <div class="flex items-center space-x-4 mb-10">
+                    <div class="px-6 py-3 bg-gray-100 rounded-lg border-l-4 border-gray-400">
+                        <p class="text-2xl font-bold text-gray-700">(Help Ponto)</p>
+                    </div>
+                </div>
+                
+                <p class="text-xl text-gray-600 font-open-sans font-light leading-relaxed mb-8 max-w-lg">
+                    Capacitação estratégica para gestores: do lançamento correto à segurança jurídica.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-50 to-white border-l-4 border-sp-blue p-6 mb-10 rounded-r-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center">
+                    <div class="bg-white p-3 rounded-full shadow-sm mr-4 text-sp-blue">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-sp-blue uppercase tracking-wider mb-1">Público-alvo Exclusivo</p>
+                        <p class="text-gray-800 font-bold text-lg">Chefias, RH e Apontadores</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-20 right-20 border-t border-gray-100 pt-4 flex justify-between items-center text-xs text-gray-400 font-open-sans">
+                <div class="flex items-center hover:text-sp-blue transition-colors cursor-help" title="Baseado na LC 1041/2008 e Decretos vigentes">
+                    <i class="fas fa-book mr-2"></i><span>Manual Oficial do Estado</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-sync-alt mr-2 animate-spin-slow" style="animation-duration: 10s;"></i><span>Atualizado: Dez/2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.addEventListener('show:result',e=>{const row={schema:1,id:crypto.randomUUID(),finishedAt:new Date().toISOString(),...e.detail};queueMicrotask(()=>document.dispatchEvent(new CustomEvent('help:result-stored',{detail:row})));});

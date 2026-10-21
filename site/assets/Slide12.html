@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Slide Tabela Comparativa CLT</title>
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
+    <link rel="stylesheet" href="vendor/fonts.css">
+    <link rel="stylesheet" href="vendor/fontawesome.min.css">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background-color: #f0f0f0; -webkit-font-smoothing: antialiased; }
+        .slide-container { width: 1600px; height: 900px; display: flex; flex-direction: column; background-color: white; overflow: hidden; position: relative; }
+        .bg-sp-blue { background-color: #0055A4; }
+        .text-sp-blue { color: #0055A4; }
+        .table-header { background-color: #0055A4; color: white; }
+        .row-hover:hover { background-color: #f8fafc; transform: scale(1.005); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); z-index: 10; position: relative; transition: all 0.2s ease; }
+        .code-badge { font-family: 'Roboto', monospace; letter-spacing: 0.05em; }
+        .animate-fade-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    </style>
+
+
+
+<body>
+    <div class="slide-container">
+        <div class="h-24 bg-white px-12 flex items-center justify-between border-b border-gray-200 relative z-20 shadow-sm">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mr-4 border border-blue-100"><i class="fas fa-briefcase-medical text-sp-blue text-2xl"></i></div>
+                <div><h1 class="text-3xl font-black text-gray-800 uppercase tracking-tight">Gestão CLT</h1><p class="text-gray-500 text-sm font-medium">Atestados e Auxílio-Doença</p></div>
+            </div>
+            <div class="flex items-center space-x-1"><div class="h-1.5 w-6 bg-black"></div><div class="h-1.5 w-6 bg-white border border-gray-200"></div><div class="h-1.5 w-6 bg-black"></div><div class="h-1.5 w-6 bg-red-600"></div></div>
+        </div>
+        <div class="flex-1 p-10 bg-gray-50 flex flex-col">
+            <div class="mb-6 flex items-center text-gray-600 bg-blue-50 p-4 rounded-lg border-l-4 border-sp-blue animate-fade-up">
+                <i class="fas fa-info-circle text-sp-blue mr-3 text-xl"></i><p class="text-lg">Para servidores CLT, o tratamento de saúde segue regras previdenciárias específicas baseadas na duração do afastamento.</p>
+            </div>
+            <div class="flex-1 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 flex flex-col animate-fade-up" style="animation-delay: 0.1s;">
+                <div class="bg-sp-blue text-white grid grid-cols-12 py-4 px-6 font-bold uppercase tracking-wider text-sm shadow-sm z-10">
+                    <div class="col-span-2 text-center">Código</div><div class="col-span-4 pl-4">Duração / Situação</div><div class="col-span-6 pl-4">Responsável / Impacto</div>
+                </div>
+                <div class="flex-1 flex flex-col">
+                    <div class="grid grid-cols-12 border-b border-gray-100 row-hover py-5 px-6 items-center transition-all duration-200">
+                        <div class="col-span-2 flex justify-center"><span class="bg-green-100 text-green-700 code-badge text-xl font-black px-4 py-2 rounded-lg shadow-sm">120</span></div>
+                        <div class="col-span-4 pl-4 border-l border-gray-100"><div class="flex items-center mb-1"><i class="fas fa-calendar-day text-green-500 mr-2 w-5 text-center"></i><h3 class="font-bold text-gray-800 text-lg">Atestado de 1 Dia</h3></div><p class="text-sm text-gray-500 ml-7">Afastamento pontual único.</p></div>
+                        <div class="col-span-6 pl-4 flex items-center justify-between"><div class="flex items-center"><div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600 mr-3"><i class="fas fa-building"></i></div><div><p class="text-sm font-bold text-gray-700">Empresa Paga</p><p class="text-xs text-gray-500">Sem desconto no salário.</p></div></div><span class="text-green-600 text-xs font-bold uppercase bg-green-50 px-2 py-1 rounded">Simples</span></div>
+                    </div>
+                    <div class="grid grid-cols-12 border-b border-gray-100 row-hover py-6 px-6 items-center bg-blue-50 transition-all duration-200">
+                        <div class="col-span-2 flex justify-center"><span class="bg-white text-sp-blue border border-blue-200 code-badge text-xl font-black px-4 py-2 rounded-lg shadow-sm">361</span></div>
+                        <div class="col-span-4 pl-4 border-l border-blue-100"><div class="flex items-center mb-1"><i class="fas fa-calendar-week text-sp-blue mr-2 w-5 text-center"></i><h3 class="font-bold text-gray-800 text-lg">Auxílio Doença (Até 15 dias)</h3></div><p class="text-sm text-gray-500 ml-7">Atestados de 2 a 15 dias consecutivos.</p></div>
+                        <div class="col-span-6 pl-4 flex items-center justify-between"><div class="flex items-center"><div class="w-10 h-10 rounded-full bg-white border border-blue-100 flex items-center justify-center text-sp-blue mr-3"><i class="fas fa-building"></i></div><div><p class="text-sm font-bold text-gray-700">Empresa Paga Integral</p><p class="text-xs text-gray-500">Servidor mantém vencimentos pela folha.</p></div></div><span class="text-sp-blue text-xs font-bold uppercase bg-white border border-blue-100 px-2 py-1 rounded">Padrão</span></div>
+                    </div>
+                    <div class="grid grid-cols-12 row-hover py-6 px-6 items-center bg-red-50 relative transition-all duration-200 border-l-8 border-red-500">
+                        <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl">Atenção</div>
+                        <div class="col-span-2 flex justify-center"><span class="bg-white text-red-600 border border-red-200 code-badge text-xl font-black px-4 py-2 rounded-lg shadow-sm">315</span></div>
+                        <div class="col-span-4 pl-4 border-l border-red-200"><div class="flex items-center mb-1"><i class="fas fa-calendar-plus text-red-500 mr-2 w-5 text-center"></i><h3 class="font-bold text-gray-800 text-lg">Licença (+15 dias)</h3></div><p class="text-sm text-gray-600 ml-7">A partir do 16º dia de afastamento.</p></div>
+                        <div class="col-span-6 pl-4 flex items-center justify-between"><div class="flex items-center"><div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 mr-3"><i class="fas fa-university"></i></div><div><p class="text-sm font-bold text-red-700">INSS Assume</p><p class="text-xs text-red-600 font-medium">Folha do Estado cessa pagamento.</p></div></div><div class="flex flex-col items-end"><span class="text-white text-xs font-bold uppercase bg-red-500 px-2 py-1 rounded mb-1">Prejuízo</span><span class="text-xs text-gray-500">Agendar perícia INSS</span></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 flex justify-between items-center"><div class="flex items-center space-x-4 text-sm text-gray-500"><div class="flex items-center"><div class="w-3 h-3 bg-white border border-gray-300 mr-2 rounded-sm"></div><span>Sem impacto</span></div><div class="flex items-center"><div class="w-3 h-3 bg-blue-50 border border-blue-200 mr-2 rounded-sm"></div><span>Atenção</span></div><div class="flex items-center"><div class="w-3 h-3 bg-red-50 border border-red-200 mr-2 rounded-sm"></div><span>Impacto Salarial</span></div></div><p class="text-xs text-gray-400">Slide 12 de 29</p></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>

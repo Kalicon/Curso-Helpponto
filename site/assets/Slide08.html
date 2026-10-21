@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Slide Fluxograma Interativo - Corrigido</title>
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
+    <link rel="stylesheet" href="vendor/fonts.css">
+    <link rel="stylesheet" href="vendor/fontawesome.min.css">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background-color: #f0f0f0; -webkit-font-smoothing: antialiased; }
+        .slide-container { width: 1600px; min-height: 900px; display: flex; flex-direction: column; background-color: #f8f9fa; overflow: hidden; position: relative; }
+        .bg-sp-blue { background-color: #0055A4; }
+        .bg-grid-pattern { background-image: linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px); background-size: 40px 40px; }
+        
+        /* --- ANIMAÇÕES CSS PURAS (Garante compatibilidade) --- */
+        
+        /* Aparição Suave */
+        @keyframes fadeInMove { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes fadeInOnly { from { opacity: 0; } to { opacity: 1; } }
+        
+        /* Crescimento das Linhas */
+        @keyframes growRight { from { width: 0; } to { width: 40px; } }
+        @keyframes growDown { from { height: 0; } to { height: 30px; } }
+        @keyframes growUp { from { height: 0; } to { height: 30px; } }
+
+        /* Pulsação do Alerta */
+        @keyframes pulseAlert { 0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); } 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); } }
+
+        /* Classes de Animação */
+        .anim-block { opacity: 0; animation: fadeInMove 0.5s ease-out forwards; }
+        .anim-line-h { width: 0; height: 2px; background-color: #cbd5e1; position: absolute; top: 50%; animation: growRight 0.5s ease-out forwards; }
+        .anim-line-v-down { width: 2px; height: 0; background-color: #cbd5e1; position: absolute; right: 50%; top: 100%; animation: growDown 0.5s ease-out forwards; }
+        .anim-line-v-up { width: 2px; height: 0; background-color: #cbd5e1; position: absolute; right: 50%; bottom: 100%; animation: growUp 0.5s ease-out forwards; }
+        
+        .anim-final { opacity: 0; animation: fadeInOnly 1s ease-out forwards 2s; } /* Delay de 2s */
+        .pulse-effect { animation: pulseAlert 2s infinite; }
+
+        /* Delays em Sequência */
+        .d-1 { animation-delay: 0.2s; }
+        .d-2 { animation-delay: 0.6s; }
+        .d-3 { animation-delay: 1.0s; }
+        .d-4 { animation-delay: 1.4s; }
+        
+        /* Cards */
+        .flow-node { position: relative; z-index: 20; transition: transform 0.2s; }
+        .flow-node:hover { transform: scale(1.05); z-index: 30; }
+
+    </style>
+
+<body>
+    <div class="slide-container">
+        <div class="h-24 bg-white px-12 flex items-center justify-between border-b border-gray-200 relative z-20 shadow-sm">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mr-4 border border-blue-100"><i class="fas fa-project-diagram text-sp-blue text-2xl"></i></div>
+                <div><h1 class="text-3xl font-black text-gray-800 uppercase tracking-tight">Fluxo de Decisão</h1><p class="text-gray-500 text-sm font-medium">Guia Rápido para Atrasos e Saídas</p></div>
+            </div>
+            <div class="flex items-center space-x-1"><div class="h-1.5 w-6 bg-black"></div><div class="h-1.5 w-6 bg-white border border-gray-200"></div><div class="h-1.5 w-6 bg-black"></div><div class="h-1.5 w-6 bg-red-600"></div></div>
+        </div>
+        
+        <div class="flex-1 p-8 relative bg-grid-pattern flex flex-col justify-center">
+            <div class="flex justify-between items-stretch gap-4 h-full max-h-[520px]">
+                
+                <div class="flex flex-col justify-center gap-12 w-1/5 pl-4">
+                    <div class="flow-node anim-block d-1 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-500 relative">
+                        <div class="flex items-center mb-2"><i class="fas fa-clock text-blue-500 mr-2"></i><h3 class="font-bold text-gray-700">Entrada Atrasada</h3></div>
+                        <p class="text-xs text-gray-500">Início do expediente</p>
+                        <div class="anim-line-h -right-10 d-1" style="width: 40px;"></div>
+                    </div>
+                    
+                    <div class="flow-node anim-block d-1 bg-white p-4 rounded-lg shadow-md border-l-4 border-yellow-500 relative mt-16">
+                        <div class="flex items-center mb-2"><i class="fas fa-door-open text-yellow-500 mr-2"></i><h3 class="font-bold text-gray-700">Saída Antecipada</h3></div>
+                        <p class="text-xs text-gray-500">Durante o expediente</p>
+                        <div class="anim-line-h -right-10 d-1" style="width: 40px;"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center gap-6 w-1/5">
+                    <div class="flow-node anim-block d-2 bg-blue-50 p-3 rounded-lg border border-blue-100 text-center relative">
+                        <p class="text-xs font-bold text-blue-800 uppercase mb-1">Tempo</p><p class="text-sm font-bold text-gray-700">Até 15 min?</p>
+                        <div class="anim-line-h -right-10 d-2" style="width: 40px;"></div>
+                    </div>
+                    
+                    <div class="flow-node anim-block d-2 bg-orange-50 p-3 rounded-lg border border-orange-100 text-center relative mt-4">
+                        <p class="text-xs font-bold text-orange-800 uppercase mb-1">Tempo</p><p class="text-sm font-bold text-gray-700">Mais de 15 min?</p>
+                        <div class="anim-line-h -right-10 d-2" style="width: 40px;"></div>
+                    </div>
+                    
+                    <div class="flow-node anim-block d-2 bg-yellow-50 p-3 rounded-lg border border-yellow-100 text-center relative mt-24">
+                        <p class="text-xs font-bold text-yellow-800 uppercase mb-1">Permissão</p><p class="text-sm font-bold text-gray-700">Autorizada?</p>
+                        <div class="anim-line-h -right-10 d-2" style="width: 40px;"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center gap-6 w-1/4">
+                    <div class="flow-node anim-block d-3 bg-white p-4 rounded-lg shadow-sm border border-gray-200 relative text-center">
+                        <p class="text-xs text-gray-500 uppercase font-bold mb-2">Ação do Servidor</p>
+                        <p class="font-bold text-blue-900 mb-2">Compensou no dia?</p>
+                        
+                        <div class="anim-line-v-up right-1/2 d-3"></div>
+                        <div class="absolute -top-8 right-0 text-xs font-bold text-green-600 bg-white px-1">Sim</div>
+                        
+                        <div class="anim-line-v-down right-1/2 d-3"></div>
+                        <div class="absolute -bottom-8 right-0 text-xs font-bold text-red-600 bg-white px-1">Não</div>
+                    </div>
+                    
+                    <div class="h-20 flex items-center justify-center relative mt-4">
+                        <div class="w-full border-t-2 border-dashed border-gray-300 anim-block d-3"></div>
+                    </div>
+
+                    <div class="h-24 flex items-center justify-center relative mt-20">
+                        <div class="w-full border-t-2 border-gray-300 anim-block d-3"></div>
+                        <span class="absolute bg-white px-2 text-xs font-bold text-green-600 border border-green-200 rounded anim-block d-3">Sim</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center gap-4 w-1/4">
+                    <div class="flow-node anim-block d-4 bg-green-600 text-white p-3 rounded-lg shadow-lg flex items-center justify-between">
+                        <div><span class="block text-2xl font-black">153</span><span class="text-xs opacity-90">Sem Desconto</span></div>
+                        <i class="fas fa-check-circle text-2xl opacity-50"></i>
+                    </div>
+                    
+                    <div class="flow-node anim-block d-4 bg-red-600 text-white p-3 rounded-lg shadow-lg flex items-center justify-between mt-8">
+                        <div><span class="block text-2xl font-black">229</span><span class="text-xs opacity-90">Desconto 1/3</span></div>
+                        <i class="fas fa-exclamation-circle text-2xl opacity-50"></i>
+                    </div>
+                    
+                    <div class="flow-node anim-block d-4 bg-yellow-500 text-white p-3 rounded-lg shadow-lg flex items-center justify-between mt-20">
+                        <div><span class="block text-2xl font-black">235</span><span class="text-xs opacity-90">Compensar 3 dias</span></div>
+                        <i class="fas fa-hourglass-half text-2xl opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anim-final absolute bottom-6 left-8 right-8 bg-red-50 border border-red-200 rounded-lg p-3 flex items-center justify-between shadow-sm pulse-effect">
+                <div class="flex items-center">
+                    <div class="bg-red-600 text-white px-3 py-1 rounded font-bold text-sm mr-3">REGRA FINAL</div>
+                    <p class="text-gray-700 text-sm"><i class="fas fa-calculator text-red-500 mr-2"></i> Trabalhou <strong>menos de 2/3</strong> da jornada obrigatória?</p>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-arrow-right text-red-300 mx-3"></i>
+                    <div class="flex items-center bg-white border border-red-200 px-3 py-1 rounded">
+                        <span class="font-black text-red-600 mr-2">046</span>
+                        <span class="text-xs text-red-800 font-medium">Perda Total do Dia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-8 bg-white border-t border-gray-200 flex items-center justify-between px-12 text-xs text-gray-400"><p><i class="fas fa-info-circle mr-1"></i> Use este fluxo para cada ocorrência individual.</p><p>Slide 8 de 29</p></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
