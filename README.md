@@ -33,3 +33,9 @@ Não publicar chaves privadas, `RATE_SALT`, `.env`, `.dev.vars`, banco SQLite ou
 ## Identidade visual
 
 HUB e ranking seguem a apresentação: azul `#0055A4`, branco, cinza e vermelho, com tipografia Roboto e scroll GSAP com profundidade moderada. As animações respeitam movimento reduzido. Somente o jogo mantém a identidade do palco, Leonor e bancada.
+
+## Recuperação e envio automático
+
+A opção Continuar partida recupera uma partida interrompida neste navegador por até 24 horas, preservando pergunta, escolha, pontos e ajudas usadas. Uma resposta já revelada não é contada novamente.
+
+Resultados pendentes ficam guardados neste navegador e o envio é repetido ao reconectar, reabrir o jogo ou usar o botão de reenviar. Cada partida mantém seu identificador para evitar duplicação no ranking. Limpar dados do navegador remove partidas e envios guardados. Em computadores compartilhados, confira o nome antes de retomar uma partida.
