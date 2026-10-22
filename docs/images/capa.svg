@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Help Ponto — Conhecimento para cada lançamento">
+<rect width="1280" height="360" rx="20" fill="#f3f6fa"/>
+<path d="M0 0h320v8H0z" fill="#171717"/><path d="M320 0h320v8H320z" fill="#d9dce0"/><path d="M640 0h320v8H640z" fill="#171717"/><path d="M960 0h320v8H960z" fill="#da251d"/>
+<circle cx="1140" cy="235" r="190" fill="#e5edf7"/><circle cx="1140" cy="235" r="145" fill="none" stroke="#0055a4" stroke-opacity=".15" stroke-width="2"/>
+<rect x="64" y="62" width="56" height="56" rx="10" fill="#0055a4"/><text x="92" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="white">H</text>
+<text x="138" y="86" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#202a37">HELP PONTO</text>
+<text x="138" y="110" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#0055a4">CAPACITAÇÃO · CONSULTA · CONHECIMENTO</text>
+<text x="64" y="187" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#202a37">Conhecimento para</text><text x="64" y="242" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#0055a4">cada lançamento.</text>
+<text x="64" y="298" font-family="Arial,sans-serif" font-size="18" fill="#506078">Aprenda. Consulte. Entre no jogo.</text>
+<rect x="974" y="100" width="230" height="170" rx="16" fill="#0055a4"/>
+<text x="1089" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="white">DA ROTINA AO PALCO</text>
+<text x="1089" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="47" font-weight="700" fill="white">1 MILHÃO</text>
+<text x="1089" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#0055a4">PONTOS FICTÍCIOS. APRENDIZADO REAL.</text>
+</svg>
