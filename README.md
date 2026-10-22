@@ -1,41 +1,71 @@
 # Curso Help Ponto
 
-Entregáveis finais para o repositório **Kalicon/Curso-Helpponto**.
+Capacitação para consulta e prática sobre frequência no Help Ponto, com apresentação, cartilha e um jogo de perguntas com Leonor e ranking compartilhado.
 
-## Endereços preparados
+## Acesse
 
-- HUB: https://kalicon.github.io/Curso-Helpponto/
-- Jogo direto: https://kalicon.github.io/Curso-Helpponto/jogo.html
-- Ranking: https://kalicon.github.io/Curso-Helpponto/ranking.html
-- Repositório: https://github.com/Kalicon/Curso-Helpponto
+| Material | Link |
+| --- | --- |
+| HUB do curso | [Abrir o curso](https://kalicon.github.io/Curso-Helpponto/) |
+| Jogo | [Entrar no palco](https://kalicon.github.io/Curso-Helpponto/jogo.html) |
+| Ranking | [Ver os resultados](https://kalicon.github.io/Curso-Helpponto/ranking.html) |
+| Cartilha | [Baixar o PDF dos slides](https://kalicon.github.io/Curso-Helpponto/materiais/Cartilha_Help_Ponto.pdf) |
 
-O GitHub Pages está configurado; os endereços ficam disponíveis após a execução do workflow de publicação. Os atalhos `.url` desta pasta já apontam para os endereços finais.
+O site está publicado no GitHub Pages. Não é necessário instalar o jogo. Os atalhos `.url` deste repositório também abrem os endereços online.
+
+## O que você encontra
+
+- **Apresentação:** conteúdo de frequência e uma tela de aula prática antes do encerramento.
+- **Cartilha dos slides:** PDF para baixar e consultar.
+- **Jogo:** partidas de dez perguntas, sorteadas entre 71 questões revisadas, com alternativas embaralhadas e progressão até um milhão de pontos.
+- **Ajudas:** eliminar alternativas, consultar Leonor, pular uma pergunta e ouvir a bancada de Marcelo, Lia e Kalil. Os palpites da bancada podem estar errados.
+- **Leonor e palco:** falas variadas, narração, trilha de suspense e cenas especiais na pergunta final e na conquista do milhão.
+- **Ranking online:** envio automático do resultado, melhores desempenhos por nome e destaque para quem chega ao milhão.
+
+O jogo é educativo. Os pontos não correspondem a dinheiro ou premiação.
+
+## Partidas e resultados
+
+Informe seu nome antes de começar. O ranking é público; você pode usar um apelido que permita sua identificação pelo grupo. Participantes com o mesmo nome são agrupados, portanto prefira um nome que evite confusão.
+
+Uma partida interrompida pode ser retomada neste navegador por até 24 horas, preservando a pergunta e as ajudas usadas. Em computadores compartilhados, confira o nome antes de continuar.
+
+Resultados com envio pendente ficam guardados no navegador, que tenta reenviar ao reconectar, reabrir o jogo ou acionar o botão de reenvio. O identificador da partida evita duplicação. Limpar os dados do navegador remove partidas e envios guardados. A abertura do site e o ranking compartilhado dependem de conexão com a internet.
+
+A narração utiliza as vozes disponíveis no navegador e no dispositivo. A disponibilidade e a qualidade da voz feminina podem variar entre computadores e celulares. Som e música dependem da interação inicial do participante.
+
+## Identidade visual e acessibilidade
+
+HUB e ranking seguem o padrão da apresentação: azul `#0055A4`, branco, cinza, vermelho e tipografia Roboto. O scroll usa GSAP com efeitos de profundidade. Somente o jogo possui a identidade própria do palco.
+
+As animações respeitam a preferência por movimento reduzido. Foram realizadas verificações em Chrome e em tamanhos de tela de celular; isso não representa uma certificação em todos os navegadores e dispositivos.
 
 ## Organização
 
-- `site/`: únicos arquivos que devem ser publicados no GitHub Pages. HUB institucional, apresentação teórica, cartilha PDF, jogo e ranking.
-- `servico-ranking/`: código e configuração do serviço de resultados. Não é publicado pelo GitHub Pages. Configuração detalhada em `servico-ranking/README.md`.
-- `.github/workflows/pages.yml`: publicação manual, pelo botão Run workflow do GitHub Actions.
-- `Site_GitHub_Pages.zip`: cópia da pasta pública, para entrega.
+| Caminho | Conteúdo |
+| --- | --- |
+| `site/` | Arquivos públicos do HUB, apresentação, PDF, jogo e ranking |
+| `servico-ranking/` | API de resultados em Cloudflare Workers e banco D1 |
+| `.github/workflows/pages.yml` | Publicação manual no GitHub Pages |
+| `Site_GitHub_Pages.zip` | Pacote dos arquivos públicos para entrega |
 
-A versão pública não contém validação de perguntas, aula prática, modo Expedição, guia preliminar, referências internas, exportações de pareceres ou ferramentas de teste. O banco publicado contém apenas 71 perguntas revisadas.
+Somente a pasta `site/` é enviada ao GitHub Pages. O serviço de ranking possui implantação própria; consulte [sua documentação](servico-ranking/README.md).
 
-## Antes de ativar
+As ferramentas de validação de perguntas, os pareceres, documentos internos e o guia prático ainda em validação ficam fora da entrega pública. As ilustrações do guia em preparação usam dados fictícios; capturas com dados pessoais não devem ser publicadas.
 
-1. Serviço Cloudflare criado na conta autorizada. API: https://help-ponto-ranking.help-ponto-ranking.workers.dev . Banco e segredo já configurados.
-2. Preencher `apiUrl` em `site/assets/site-config.js` com a URL HTTPS da API. Esse endereço é público e não é uma senha.
-3. Na configuração do repositório, em Settings → Pages, escolher GitHub Actions como origem.
-4. Executar o workflow **Publicar site** manualmente e conferir o endereço exibido pelo GitHub.
-5. Testar uma partida com nome e conferir o ranking de outro computador.
+## Manutenção e publicação
 
-Não publicar chaves privadas, `RATE_SALT`, `.env`, `.dev.vars`, banco SQLite ou tokens. Os arquivos públicos usam somente o endereço da API. O jogo é educativo e não possui premiação. O ranking é público e agrupa participantes com o mesmo nome; um apelido identificável pode ser utilizado.
+Este repositório contém os entregáveis gerados. No ambiente de desenvolvimento, as alterações devem ser feitas nos arquivos de origem e processadas pelo gerador `publicacao/gerar-entregaveis.py`, evitando que uma geração posterior sobrescreva ajustes feitos diretamente em `site/`.
 
-## Identidade visual
+Para publicar uma nova versão do site:
 
-HUB e ranking seguem a apresentação: azul `#0055A4`, branco, cinza e vermelho, com tipografia Roboto e scroll GSAP com profundidade moderada. As animações respeitam movimento reduzido. Somente o jogo mantém a identidade do palco, Leonor e bancada.
+1. Gerar e conferir os entregáveis, os links e o conteúdo das perguntas.
+2. Enviar as alterações para a branch `main`.
+3. No GitHub, abrir **Actions → Publicar site → Run workflow**.
+4. Aguardar a conclusão e conferir o HUB, o jogo e o ranking online.
 
-## Recuperação e envio automático
+O workflow é manual: enviar um commit não publica automaticamente o site. Alterações apenas neste README não exigem uma nova publicação no Pages.
 
-A opção Continuar partida recupera uma partida interrompida neste navegador por até 24 horas, preservando pergunta, escolha, pontos e ajudas usadas. Uma resposta já revelada não é contada novamente.
+Os testes do serviço de ranking podem ser executados em `servico-ranking/` com `npm ci` e `npm test`, usando uma versão recente do Node.js com suporte a `node:sqlite`.
 
-Resultados pendentes ficam guardados neste navegador e o envio é repetido ao reconectar, reabrir o jogo ou usar o botão de reenviar. Cada partida mantém seu identificador para evitar duplicação no ranking. Limpar dados do navegador remove partidas e envios guardados. Em computadores compartilhados, confira o nome antes de retomar uma partida.
+Nunca incluir tokens, `RATE_SALT`, `.env`, `.dev.vars`, bancos locais ou credenciais nos commits. Os arquivos públicos usam somente o endereço da API. O ranking tem finalidade educativa e não oferece verificação de identidade dos participantes.
